@@ -15,9 +15,9 @@
 package encrypt
 
 import (
-	"github.com/goharbor/harbor/src/adminserver/systemcfg/encrypt"
-	"github.com/goharbor/harbor/src/adminserver/systemcfg/store"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/adminserver/systemcfg/encrypt"
+	"github.com/XiaYinchang/harbor/src/adminserver/systemcfg/store"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 const (

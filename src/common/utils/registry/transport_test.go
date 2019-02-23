@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
 )
 
 type simpleModifier struct {

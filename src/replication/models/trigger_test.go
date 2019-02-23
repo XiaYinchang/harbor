@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	"github.com/astaxie/beego/validation"
-	"github.com/goharbor/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication"
 	"github.com/stretchr/testify/assert"
 )
 

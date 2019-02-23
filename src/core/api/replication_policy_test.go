@@ -19,14 +19,14 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/dao/project"
+	"github.com/XiaYinchang/harbor/src/common/dao/project"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	api_models "github.com/goharbor/harbor/src/core/api/models"
-	"github.com/goharbor/harbor/src/replication"
-	rep_models "github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	api_models "github.com/XiaYinchang/harbor/src/core/api/models"
+	"github.com/XiaYinchang/harbor/src/replication"
+	rep_models "github.com/XiaYinchang/harbor/src/replication/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

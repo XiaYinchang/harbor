@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	common_http "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/job"
-	"github.com/goharbor/harbor/src/common/models"
-	common_utils "github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/job"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	common_utils "github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/utils"
 )
 
 const (

@@ -19,13 +19,13 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/core"
-	rep_models "github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/core"
+	rep_models "github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // LabelAPI handles requests for label management

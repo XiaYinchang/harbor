@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"net/http"
 
-	common_http "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/http/modifier/auth"
-	reg "github.com/goharbor/harbor/src/common/utils/registry"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/logger"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/http/modifier/auth"
+	reg "github.com/XiaYinchang/harbor/src/common/utils/registry"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
 )
 
 // Replicator call UI's API to start a repliation according to the policy ID

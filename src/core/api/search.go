@@ -19,13 +19,13 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
-	coreutils "github.com/goharbor/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	coreutils "github.com/XiaYinchang/harbor/src/core/utils"
 	"k8s.io/helm/cmd/helm/search"
 )
 

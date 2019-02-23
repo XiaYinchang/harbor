@@ -1,8 +1,8 @@
 package trigger
 
 import (
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
 )
 
 // DefaultWatchList is the default instance of WatchList

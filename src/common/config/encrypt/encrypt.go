@@ -18,8 +18,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 var (

@@ -19,12 +19,12 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/promgr"
-	"github.com/goharbor/harbor/src/core/promgr/pmsdriver/local"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/promgr"
+	"github.com/XiaYinchang/harbor/src/core/promgr/pmsdriver/local"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -15,7 +15,7 @@
 package test
 
 import (
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
 )
 
 // FakeWatchItemDAO is the fake implement for the dao.WatchItemDAO

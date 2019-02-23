@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	common_http "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/job"
-	job_models "github.com/goharbor/harbor/src/common/job/models"
-	"github.com/goharbor/harbor/src/common/models"
-	common_utils "github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/utils"
-	"github.com/goharbor/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/job"
+	job_models "github.com/XiaYinchang/harbor/src/common/job/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	common_utils "github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/replication"
 )
 
 // ScheduleTrigger will schedule a alternate policy to provide 'daily' and 'weekly' trigger ways.

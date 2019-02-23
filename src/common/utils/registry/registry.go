@@ -24,8 +24,8 @@ import (
 
 	// "time"
 
-	commonhttp "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/utils"
+	commonhttp "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/utils"
 )
 
 // Registry holds information of a registry entity

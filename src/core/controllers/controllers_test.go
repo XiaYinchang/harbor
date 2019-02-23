@@ -26,11 +26,11 @@ import (
 	"strings"
 
 	"github.com/astaxie/beego"
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/models"
-	utilstest "github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/proxy"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	utilstest "github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/proxy"
 	"github.com/stretchr/testify/assert"
 )
 

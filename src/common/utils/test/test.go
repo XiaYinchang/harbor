@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"fmt"
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common"
 	"github.com/gorilla/mux"
 	"os"
 	"sort"

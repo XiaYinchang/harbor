@@ -23,7 +23,7 @@
 package apilib
 
 import (
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
 )
 
 type Search struct {

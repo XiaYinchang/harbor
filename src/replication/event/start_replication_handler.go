@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/goharbor/harbor/src/replication/core"
-	"github.com/goharbor/harbor/src/replication/event/notification"
+	"github.com/XiaYinchang/harbor/src/replication/core"
+	"github.com/XiaYinchang/harbor/src/replication/event/notification"
 )
 
 // StartReplicationHandler implements the notification handler interface to handle start replication requests.

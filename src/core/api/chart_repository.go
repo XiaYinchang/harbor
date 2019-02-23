@@ -11,13 +11,13 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/core/label"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/core/label"
 
-	"github.com/goharbor/harbor/src/chartserver"
-	"github.com/goharbor/harbor/src/common/rbac"
-	hlog "github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/chartserver"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	hlog "github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 const (

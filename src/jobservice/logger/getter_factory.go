@@ -3,7 +3,7 @@ package logger
 import (
 	"errors"
 
-	"github.com/goharbor/harbor/src/jobservice/logger/getter"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/getter"
 )
 
 // GetterFactory is responsible for creating a log data getter based on the options

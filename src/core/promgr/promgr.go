@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/promgr/metamgr"
-	"github.com/goharbor/harbor/src/core/promgr/pmsdriver"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/promgr/metamgr"
+	"github.com/XiaYinchang/harbor/src/core/promgr/pmsdriver"
 )
 
 // ProjectManager is the project mamager which abstracts the operations related

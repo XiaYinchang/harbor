@@ -19,9 +19,9 @@ import (
 	"flag"
 	"net/http"
 
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/registryctl/config"
-	"github.com/goharbor/harbor/src/registryctl/handlers"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/registryctl/config"
+	"github.com/XiaYinchang/harbor/src/registryctl/handlers"
 )
 
 // RegistryCtl for registry controller

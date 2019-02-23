@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // ParseEndpoint parses endpoint to a URL

@@ -18,7 +18,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

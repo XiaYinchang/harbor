@@ -2,7 +2,7 @@ package getter
 
 import (
 	"errors"
-	"github.com/goharbor/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/dao"
 )
 
 // DBGetter is responsible for retrieving DB log data

@@ -19,11 +19,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/common/utils/registry"
-	"github.com/goharbor/harbor/src/common/utils/registry/auth"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/service/token"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils/registry"
+	"github.com/XiaYinchang/harbor/src/common/utils/registry/auth"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/service/token"
 )
 
 // NewRepositoryClientForUI creates a repository client that can only be used to

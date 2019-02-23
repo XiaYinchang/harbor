@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/goharbor/harbor/tests/apitests/api-testing/client"
-	"github.com/goharbor/harbor/tests/apitests/api-testing/models"
+	"github.com/XiaYinchang/harbor/tests/apitests/api-testing/client"
+	"github.com/XiaYinchang/harbor/tests/apitests/api-testing/models"
 )
 
 //ProjectUtil : Util methods for project related

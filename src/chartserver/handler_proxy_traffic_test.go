@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/ghodss/yaml"
-	htesting "github.com/goharbor/harbor/src/testing"
+	htesting "github.com/XiaYinchang/harbor/src/testing"
 	helm_repo "k8s.io/helm/pkg/repo"
 )
 

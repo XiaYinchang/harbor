@@ -20,8 +20,8 @@ import (
 	"time"
 
 	"github.com/astaxie/beego/cache"
-	"github.com/goharbor/harbor/src/adminserver/client"
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/adminserver/client"
+	"github.com/XiaYinchang/harbor/src/common"
 )
 
 // Manager manages configurations

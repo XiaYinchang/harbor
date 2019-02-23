@@ -1,9 +1,9 @@
 package token
 
 import (
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/core/config"
 	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"

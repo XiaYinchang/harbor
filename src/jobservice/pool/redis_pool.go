@@ -23,13 +23,13 @@ import (
 	"time"
 
 	"github.com/gocraft/work"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/job"
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/models"
-	"github.com/goharbor/harbor/src/jobservice/opm"
-	"github.com/goharbor/harbor/src/jobservice/period"
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/job"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/opm"
+	"github.com/XiaYinchang/harbor/src/jobservice/period"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 	"github.com/gomodule/redigo/redis"
 )
 

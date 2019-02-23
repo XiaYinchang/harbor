@@ -20,8 +20,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/goharbor/harbor/src/common/api"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/api"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // ResponseHandler provides utility to handle http response.

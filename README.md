@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/goharbor/harbor.svg?branch=master)](https://travis-ci.org/goharbor/harbor)
 [![Coverage Status](https://coveralls.io/repos/github/goharbor/harbor/badge.svg?branch=master)](https://coveralls.io/github/goharbor/harbor?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/goharbor/harbor)](https://goreportcard.com/report/github.com/goharbor/harbor)
+[![Go Report Card](https://goreportcard.com/badge/github.com/XiaYinchang/harbor)](https://goreportcard.com/report/github.com/XiaYinchang/harbor)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2095/badge)](https://bestpractices.coreinfrastructure.org/projects/2095)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c8d726c9cfd047ffaf681449d673f246)](https://www.codacy.com/app/goharbor/harbor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=goharbor/harbor&amp;utm_campaign=Badge_Grade)
 [![Nightly Status](https://us-central1-eminent-nation-87317.cloudfunctions.net/harbor-nightly-result)](https://www.googleapis.com/storage/v1/b/harbor-nightly/o)
@@ -46,7 +46,7 @@ Harbor is hosted by the [Cloud Native Computing Foundation](https://cncf.io) (CN
 
 Download binaries of **[Harbor release ](https://github.com/vmware/harbor/releases)** and follow **[Installation & Configuration Guide](docs/installation_guide.md)** to install Harbor.
 
-If you want to deploy Harbor on Kubernetes, please use the **[Harbor chart](https://github.com/goharbor/harbor-helm)**.
+If you want to deploy Harbor on Kubernetes, please use the **[Harbor chart](https://github.com/XiaYinchang/harbor-helm)**.
 
 Refer to **[User Guide](docs/user_guide.md)** for more details on how to use Harbor.
 
@@ -68,7 +68,7 @@ Tools layered on top of Harbor and contributed by community.
 ## Demos
 
 * **[Live Demo](https://demo.goharbor.io)** - A demo environment with the latest Harbor stable build installed. For additional information please refer to [this page](docs/demo_server.md).
-* **[Video Demos](https://github.com/goharbor/harbor/wiki/Video-demos-for-Harbor)** - Demos for Harbor features and continuously updated.
+* **[Video Demos](https://github.com/XiaYinchang/harbor/wiki/Video-demos-for-Harbor)** - Demos for Harbor features and continuously updated.
 
 ## Partners and Users
 

@@ -18,7 +18,7 @@ import (
 	"errors"
 	"testing"
 
-	comcfg "github.com/goharbor/harbor/src/common/config"
+	comcfg "github.com/XiaYinchang/harbor/src/common/config"
 	"github.com/stretchr/testify/assert"
 )
 

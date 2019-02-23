@@ -18,10 +18,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/goharbor/harbor/src/common"
-	common_job "github.com/goharbor/harbor/src/common/job"
-	"github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common"
+	common_job "github.com/XiaYinchang/harbor/src/common/job"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/core/config"
 	"os"
 	"strings"
 )

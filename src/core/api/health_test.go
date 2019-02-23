@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/docker/distribution/health"
-	"github.com/goharbor/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

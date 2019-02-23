@@ -14,7 +14,7 @@
 
 package opm
 
-import "github.com/goharbor/harbor/src/jobservice/models"
+import "github.com/XiaYinchang/harbor/src/jobservice/models"
 
 // Range for list scope defining
 type Range int

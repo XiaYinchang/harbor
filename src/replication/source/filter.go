@@ -1,7 +1,7 @@
 package source
 
 import (
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // Filter define the operations of selecting the matched resources from the candidates

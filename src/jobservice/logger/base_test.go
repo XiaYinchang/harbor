@@ -8,8 +8,8 @@ import (
 	"path"
 	"testing"
 
-	"github.com/goharbor/harbor/src/jobservice/config"
-	"github.com/goharbor/harbor/src/jobservice/logger/backend"
+	"github.com/XiaYinchang/harbor/src/jobservice/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/backend"
 )
 
 // Test one single std logger

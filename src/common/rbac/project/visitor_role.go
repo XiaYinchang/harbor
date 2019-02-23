@@ -15,8 +15,8 @@
 package project
 
 import (
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
 )
 
 var (

@@ -1,7 +1,7 @@
 package registry
 
 import (
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // Adaptor defines the unified operations for all the supported registries such as Harbor or DockerHub.

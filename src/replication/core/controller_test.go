@@ -18,12 +18,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/models"
-	"github.com/goharbor/harbor/src/replication/source"
-	"github.com/goharbor/harbor/src/replication/target"
-	"github.com/goharbor/harbor/src/replication/trigger"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/source"
+	"github.com/XiaYinchang/harbor/src/replication/target"
+	"github.com/XiaYinchang/harbor/src/replication/trigger"
 	"github.com/stretchr/testify/assert"
 )
 

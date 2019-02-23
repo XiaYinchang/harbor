@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
 )
 
 const (

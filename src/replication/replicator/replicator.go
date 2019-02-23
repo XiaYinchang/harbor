@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	common_job "github.com/goharbor/harbor/src/common/job"
-	job_models "github.com/goharbor/harbor/src/common/job/models"
-	common_models "github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	common_job "github.com/XiaYinchang/harbor/src/common/job"
+	job_models "github.com/XiaYinchang/harbor/src/common/job/models"
+	common_models "github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // Replication holds information for a replication

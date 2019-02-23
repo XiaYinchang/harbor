@@ -17,8 +17,8 @@ package promgr
 import (
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/core/promgr/pmsdriver"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/core/promgr/pmsdriver"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

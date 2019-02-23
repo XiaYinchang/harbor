@@ -2,7 +2,7 @@ package sweeper
 
 import (
 	"fmt"
-	"github.com/goharbor/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/dao"
 	"time"
 )
 

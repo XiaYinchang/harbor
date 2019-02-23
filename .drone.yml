@@ -1,6 +1,6 @@
 workspace:
   base: /drone
-  path: src/github.com/goharbor/harbor
+  path: src/github.com/XiaYinchang/harbor
 
 clone:
   git:

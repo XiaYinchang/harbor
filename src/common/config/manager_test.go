@@ -2,7 +2,7 @@ package config
 
 import (
 	"fmt"
-	"github.com/goharbor/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
 	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"

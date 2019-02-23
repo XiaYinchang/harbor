@@ -15,8 +15,8 @@
 package metamgr
 
 import (
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
 )
 
 // ProjectMetadataManager defines the operations that a project metadata manager should

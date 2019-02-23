@@ -15,10 +15,10 @@
 package dao
 
 import (
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // AuthModeCanBeModified determines whether auth mode can be

@@ -18,9 +18,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/goharbor/harbor/src/adminserver/handlers"
-	syscfg "github.com/goharbor/harbor/src/adminserver/systemcfg"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/adminserver/handlers"
+	syscfg "github.com/XiaYinchang/harbor/src/adminserver/systemcfg"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // Server for admin component

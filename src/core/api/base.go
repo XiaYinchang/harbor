@@ -18,13 +18,13 @@ import (
 	"net/http"
 
 	yaml "github.com/ghodss/yaml"
-	"github.com/goharbor/harbor/src/common/api"
-	"github.com/goharbor/harbor/src/common/security"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/filter"
-	"github.com/goharbor/harbor/src/core/promgr"
-	"github.com/goharbor/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/common/api"
+	"github.com/XiaYinchang/harbor/src/common/security"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/filter"
+	"github.com/XiaYinchang/harbor/src/core/promgr"
+	"github.com/XiaYinchang/harbor/src/core/utils"
 )
 
 const (

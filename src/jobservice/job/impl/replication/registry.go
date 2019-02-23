@@ -20,9 +20,9 @@ import (
 	"strconv"
 	"strings"
 
-	common_http "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/models"
-	reg "github.com/goharbor/harbor/src/common/utils/registry"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	reg "github.com/XiaYinchang/harbor/src/common/utils/registry"
 )
 
 type repository struct {

@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	// "github.com/goharbor/harbor/tests/apitests/apilib"
+	// "github.com/XiaYinchang/harbor/tests/apitests/apilib"
 )
 
 func TestStatisticGet(t *testing.T) {

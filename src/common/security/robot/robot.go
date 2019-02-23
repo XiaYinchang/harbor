@@ -1,8 +1,8 @@
 package robot
 
 import (
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/rbac/project"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/rbac/project"
 )
 
 // robot implement the rbac.User interface for project robot account

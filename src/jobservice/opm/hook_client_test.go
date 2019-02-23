@@ -19,7 +19,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/goharbor/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
 )
 
 func TestHookClient(t *testing.T) {

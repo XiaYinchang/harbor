@@ -7,9 +7,9 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/goharbor/harbor/src/jobservice/config"
-	"github.com/goharbor/harbor/src/jobservice/logger/getter"
-	"github.com/goharbor/harbor/src/jobservice/logger/sweeper"
+	"github.com/XiaYinchang/harbor/src/jobservice/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/getter"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/sweeper"
 )
 
 const (

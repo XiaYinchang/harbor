@@ -2,7 +2,7 @@ package token
 
 import (
 	"github.com/dgrijalva/jwt-go"
-	"github.com/goharbor/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
 	"github.com/pkg/errors"
 )
 

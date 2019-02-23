@@ -17,7 +17,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/goharbor/harbor/src/adminserver/api"
+	"github.com/XiaYinchang/harbor/src/adminserver/api"
 	"github.com/gorilla/mux"
 )
 

@@ -19,7 +19,7 @@ import (
 	"net/http"
 
 	"github.com/astaxie/beego"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // Handler handles request on /service/token, which is the auth provider for registry.

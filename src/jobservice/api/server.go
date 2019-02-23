@@ -21,9 +21,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/config"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
 )
 
 // Server serves the http requests.

@@ -17,7 +17,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/goharbor/harbor/src/registryctl/api"
+	"github.com/XiaYinchang/harbor/src/registryctl/api"
 	"github.com/gorilla/mux"
 )
 

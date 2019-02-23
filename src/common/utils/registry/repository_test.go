@@ -29,8 +29,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/docker/distribution/manifest/schema2"
-	commonhttp "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/utils/test"
+	commonhttp "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
 )
 
 var (

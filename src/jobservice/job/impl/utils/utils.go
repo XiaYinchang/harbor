@@ -21,9 +21,9 @@ import (
 	"sync"
 
 	"github.com/docker/distribution/registry/auth/token"
-	httpauth "github.com/goharbor/harbor/src/common/http/modifier/auth"
-	"github.com/goharbor/harbor/src/common/utils/registry"
-	"github.com/goharbor/harbor/src/common/utils/registry/auth"
+	httpauth "github.com/XiaYinchang/harbor/src/common/http/modifier/auth"
+	"github.com/XiaYinchang/harbor/src/common/utils/registry"
+	"github.com/XiaYinchang/harbor/src/common/utils/registry/auth"
 )
 
 var coreClient *http.Client

@@ -6,7 +6,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/goharbor/harbor/src/jobservice/errs"
+	"github.com/XiaYinchang/harbor/src/jobservice/errs"
 )
 
 // Test the log data getter

@@ -3,7 +3,7 @@ package pool
 import (
 	"testing"
 
-	"github.com/goharbor/harbor/src/jobservice/tests"
+	"github.com/XiaYinchang/harbor/src/jobservice/tests"
 )
 
 func TestDeDuplicator(t *testing.T) {

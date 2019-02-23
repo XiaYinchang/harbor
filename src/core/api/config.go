@@ -19,15 +19,15 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/config"
-	"github.com/goharbor/harbor/src/common/config/metadata"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/security/secret"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	corecfg "github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/filter"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/config"
+	"github.com/XiaYinchang/harbor/src/common/config/metadata"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/security/secret"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	corecfg "github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/filter"
 )
 
 // ConfigAPI ...

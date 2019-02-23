@@ -2,7 +2,7 @@ package dao
 
 import (
 	"github.com/astaxie/beego/orm"
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
 	"time"
 )
 

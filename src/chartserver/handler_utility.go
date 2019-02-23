@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	hlog "github.com/goharbor/harbor/src/common/utils/log"
+	hlog "github.com/XiaYinchang/harbor/src/common/utils/log"
 	"k8s.io/helm/cmd/helm/search"
 )
 

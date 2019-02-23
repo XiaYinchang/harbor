@@ -18,10 +18,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/dao/project"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/tests/apitests/apilib"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/dao/project"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/tests/apitests/apilib"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

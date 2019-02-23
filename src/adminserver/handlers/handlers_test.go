@@ -20,7 +20,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/goharbor/harbor/src/adminserver/auth"
+	"github.com/XiaYinchang/harbor/src/adminserver/auth"
 	"github.com/stretchr/testify/assert"
 )
 

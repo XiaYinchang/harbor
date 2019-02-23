@@ -17,10 +17,10 @@ package replication
 import (
 	"net/http"
 
-	common_http "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/utils/registry/auth"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/logger"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/utils/registry/auth"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
 )
 
 // Deleter deletes repository or images on the destination registry

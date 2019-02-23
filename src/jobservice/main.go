@@ -20,14 +20,14 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/goharbor/harbor/src/common"
-	comcfg "github.com/goharbor/harbor/src/common/config"
-	"github.com/goharbor/harbor/src/jobservice/config"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/job/impl"
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/runtime"
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/common"
+	comcfg "github.com/XiaYinchang/harbor/src/common/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/job/impl"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/runtime"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 	"os"
 )
 

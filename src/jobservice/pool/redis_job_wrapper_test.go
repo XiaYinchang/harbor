@@ -20,18 +20,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/job"
-	"github.com/goharbor/harbor/src/jobservice/logger/backend"
-	"github.com/goharbor/harbor/src/jobservice/models"
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/job"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/backend"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 
 	"github.com/gocraft/work"
 
-	"github.com/goharbor/harbor/src/jobservice/config"
-	"github.com/goharbor/harbor/src/jobservice/opm"
-	"github.com/goharbor/harbor/src/jobservice/tests"
+	"github.com/XiaYinchang/harbor/src/jobservice/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/opm"
+	"github.com/XiaYinchang/harbor/src/jobservice/tests"
 
-	"github.com/goharbor/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
 )
 
 func TestJobWrapper(t *testing.T) {

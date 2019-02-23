@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 	"time"
 )
 

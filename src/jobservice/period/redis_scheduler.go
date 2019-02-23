@@ -21,15 +21,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/errs"
-	"github.com/goharbor/harbor/src/jobservice/opm"
+	"github.com/XiaYinchang/harbor/src/jobservice/errs"
+	"github.com/XiaYinchang/harbor/src/jobservice/opm"
 
 	"github.com/robfig/cron"
 
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/models"
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 	"github.com/gomodule/redigo/redis"
 )
 

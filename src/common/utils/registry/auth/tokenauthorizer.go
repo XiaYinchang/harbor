@@ -23,10 +23,10 @@ import (
 	"time"
 
 	"github.com/docker/distribution/registry/auth/token"
-	"github.com/goharbor/harbor/src/common/http/modifier"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	token_util "github.com/goharbor/harbor/src/core/service/token"
+	"github.com/XiaYinchang/harbor/src/common/http/modifier"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	token_util "github.com/XiaYinchang/harbor/src/core/service/token"
 )
 
 const (

@@ -19,8 +19,8 @@ import (
 	"regexp"
 
 	"github.com/astaxie/beego/context"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 const (

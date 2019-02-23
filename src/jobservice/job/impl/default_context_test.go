@@ -20,10 +20,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/config"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/job"
-	"github.com/goharbor/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/job"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
 )
 
 func TestDefaultContext(t *testing.T) {

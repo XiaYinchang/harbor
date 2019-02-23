@@ -14,7 +14,7 @@
 
 package metadata
 
-import "github.com/goharbor/harbor/src/common"
+import "github.com/XiaYinchang/harbor/src/common"
 
 // Item - Configure item include default value, type, env name
 type Item struct {

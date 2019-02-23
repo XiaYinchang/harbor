@@ -4,7 +4,7 @@
 
 Welcome to Harbor! This guide provides information on filing issues and guidelines for open source contributors. **Please leave comments / suggestions if you find something is missing or incorrect.**
 
-Contributors are encouraged to collaborate using the following resources in addition to the GitHub [issue tacker](https://github.com/goharbor/harbor/issues):
+Contributors are encouraged to collaborate using the following resources in addition to the GitHub [issue tacker](https://github.com/XiaYinchang/harbor/issues):
 
 **Twitter:** [@project_harbor](https://twitter.com/project_harbor)  
 **User Group:** Join Harbor user email group: [harbor-users@googlegroups.com](https://groups.google.com/forum/#!forum/harbor-users) to get update of Harbor's news, features, releases, or to provide suggestion and feedback. To subscribe, send an email to [harbor-users+subscribe@googlegroups.com](mailto:harbor-users+subscribe@googlegroups.com) .  
@@ -22,8 +22,8 @@ export GOPATH=$HOME/go
 mkdir -p $GOPATH/src/github.com/goharbor
 
 #Get code
-go get github.com/goharbor/harbor
-cd $GOPATH/src/github.com/goharbor/harbor
+go get github.com/XiaYinchang/harbor
+cd $GOPATH/src/github.com/XiaYinchang/harbor
 
 #Track repository under your personal account
 git config push.default nothing # Anything to avoid pushing to goharbor/harbor by default
@@ -292,7 +292,7 @@ Commit changes made in response to review comments to the same branch on your fo
 
 It is a great way to contribute to Harbor by reporting an issue. Well-written and complete bug reports are always welcome! Please open an issue on Github and follow the template to fill in required information.
 
-Before opening any issue, please look up the existing [issues](https://github.com/goharbor/harbor/issues) to avoid submitting a duplication.
+Before opening any issue, please look up the existing [issues](https://github.com/XiaYinchang/harbor/issues) to avoid submitting a duplication.
 If you find a match, you can "subscribe" to it to get notified on updates. If you have additional helpful information about the issue, please leave a comment.
 
 When reporting issues, always include:

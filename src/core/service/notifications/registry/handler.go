@@ -20,17 +20,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	clairdao "github.com/goharbor/harbor/src/common/dao/clair"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/api"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/notifier"
-	coreutils "github.com/goharbor/harbor/src/core/utils"
-	rep_notification "github.com/goharbor/harbor/src/replication/event/notification"
-	"github.com/goharbor/harbor/src/replication/event/topic"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	clairdao "github.com/XiaYinchang/harbor/src/common/dao/clair"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/api"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/notifier"
+	coreutils "github.com/XiaYinchang/harbor/src/core/utils"
+	rep_notification "github.com/XiaYinchang/harbor/src/replication/event/notification"
+	"github.com/XiaYinchang/harbor/src/replication/event/topic"
 )
 
 // NotificationHandler handles request on /service/notifications/, which listens to registry's events.

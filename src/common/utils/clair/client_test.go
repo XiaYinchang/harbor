@@ -17,8 +17,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/clair/test"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/clair/test"
 	"github.com/stretchr/testify/assert"
 )
 

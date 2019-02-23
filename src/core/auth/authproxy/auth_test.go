@@ -15,9 +15,9 @@
 package authproxy
 
 import (
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/core/auth"
-	"github.com/goharbor/harbor/src/core/auth/authproxy/test"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/core/auth"
+	"github.com/XiaYinchang/harbor/src/core/auth/authproxy/test"
 	"github.com/stretchr/testify/assert"
 	"net/http/httptest"
 	"os"

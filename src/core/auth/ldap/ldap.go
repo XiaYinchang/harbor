@@ -19,17 +19,17 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/utils"
 	goldap "gopkg.in/ldap.v2"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/dao/group"
-	"github.com/goharbor/harbor/src/common/models"
-	ldapUtils "github.com/goharbor/harbor/src/common/utils/ldap"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/auth"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/dao/group"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	ldapUtils "github.com/XiaYinchang/harbor/src/common/utils/ldap"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/auth"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 // Auth implements AuthenticateHelper interface to authenticate against LDAP

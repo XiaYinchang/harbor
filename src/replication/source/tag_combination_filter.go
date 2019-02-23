@@ -17,9 +17,9 @@ package source
 import (
 	"strings"
 
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // TagCombinationFilter implements Filter interface for merging tag filter items

@@ -15,14 +15,14 @@
 package main
 
 import (
-	"github.com/goharbor/harbor/src/core/api"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/controllers"
-	"github.com/goharbor/harbor/src/core/service/notifications/admin"
-	"github.com/goharbor/harbor/src/core/service/notifications/clair"
-	"github.com/goharbor/harbor/src/core/service/notifications/jobs"
-	"github.com/goharbor/harbor/src/core/service/notifications/registry"
-	"github.com/goharbor/harbor/src/core/service/token"
+	"github.com/XiaYinchang/harbor/src/core/api"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/controllers"
+	"github.com/XiaYinchang/harbor/src/core/service/notifications/admin"
+	"github.com/XiaYinchang/harbor/src/core/service/notifications/clair"
+	"github.com/XiaYinchang/harbor/src/core/service/notifications/jobs"
+	"github.com/XiaYinchang/harbor/src/core/service/notifications/registry"
+	"github.com/XiaYinchang/harbor/src/core/service/token"
 
 	"github.com/astaxie/beego"
 )

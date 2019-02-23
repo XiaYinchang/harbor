@@ -3,7 +3,7 @@ package chartserver
 import (
 	"testing"
 
-	htesting "github.com/goharbor/harbor/src/testing"
+	htesting "github.com/XiaYinchang/harbor/src/testing"
 )
 
 func TestGetChartDetails(t *testing.T) {

@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 	yaml "gopkg.in/yaml.v2"
 )
 

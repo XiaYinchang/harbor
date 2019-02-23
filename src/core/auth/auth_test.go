@@ -17,7 +17,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
 	"github.com/stretchr/testify/assert"
 )
 

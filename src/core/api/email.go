@@ -19,9 +19,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/goharbor/harbor/src/common/utils/email"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common/utils/email"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 const (

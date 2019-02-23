@@ -17,7 +17,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 func TestMain(m *testing.M) {

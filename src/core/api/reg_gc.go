@@ -21,13 +21,13 @@ import (
 	"strconv"
 
 	"encoding/json"
-	"github.com/goharbor/harbor/src/common/dao"
-	common_http "github.com/goharbor/harbor/src/common/http"
-	common_job "github.com/goharbor/harbor/src/common/job"
-	common_models "github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/api/models"
-	utils_core "github.com/goharbor/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	common_job "github.com/XiaYinchang/harbor/src/common/job"
+	common_models "github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/api/models"
+	utils_core "github.com/XiaYinchang/harbor/src/core/utils"
 )
 
 // GCAPI handles request of harbor admin...

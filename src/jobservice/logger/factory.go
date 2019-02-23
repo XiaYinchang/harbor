@@ -4,7 +4,7 @@ import (
 	"errors"
 	"path"
 
-	"github.com/goharbor/harbor/src/jobservice/logger/backend"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/backend"
 )
 
 // Factory creates a new logger based on the settings.

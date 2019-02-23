@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
 )
 
 // AddProjectMetadata adds metadata for a project

@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	"github.com/astaxie/beego/validation"
-	"github.com/goharbor/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication"
 )
 
 // Trigger is replication launching approach definition

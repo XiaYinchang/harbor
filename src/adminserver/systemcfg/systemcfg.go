@@ -21,17 +21,17 @@ import (
 	"strconv"
 	"strings"
 
-	enpt "github.com/goharbor/harbor/src/adminserver/systemcfg/encrypt"
-	"github.com/goharbor/harbor/src/adminserver/systemcfg/store"
-	"github.com/goharbor/harbor/src/adminserver/systemcfg/store/database"
-	"github.com/goharbor/harbor/src/adminserver/systemcfg/store/encrypt"
-	"github.com/goharbor/harbor/src/adminserver/systemcfg/store/json"
-	"github.com/goharbor/harbor/src/common"
-	comcfg "github.com/goharbor/harbor/src/common/config"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	enpt "github.com/XiaYinchang/harbor/src/adminserver/systemcfg/encrypt"
+	"github.com/XiaYinchang/harbor/src/adminserver/systemcfg/store"
+	"github.com/XiaYinchang/harbor/src/adminserver/systemcfg/store/database"
+	"github.com/XiaYinchang/harbor/src/adminserver/systemcfg/store/encrypt"
+	"github.com/XiaYinchang/harbor/src/adminserver/systemcfg/store/json"
+	"github.com/XiaYinchang/harbor/src/common"
+	comcfg "github.com/XiaYinchang/harbor/src/common/config"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 const (

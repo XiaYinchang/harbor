@@ -20,15 +20,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	common_http "github.com/goharbor/harbor/src/common/http"
-	common_job "github.com/goharbor/harbor/src/common/job"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	api_models "github.com/goharbor/harbor/src/core/api/models"
-	"github.com/goharbor/harbor/src/core/utils"
-	"github.com/goharbor/harbor/src/replication/core"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	common_job "github.com/XiaYinchang/harbor/src/common/job"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	api_models "github.com/XiaYinchang/harbor/src/core/api/models"
+	"github.com/XiaYinchang/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/replication/core"
 )
 
 // RepJobAPI handles request to /api/replicationJobs /api/replicationJobs/:id/log

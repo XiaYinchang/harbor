@@ -17,10 +17,10 @@ package source
 import (
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/replication"
 
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 	"github.com/stretchr/testify/assert"
 )
 

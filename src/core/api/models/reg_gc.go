@@ -20,11 +20,11 @@ import (
 	"time"
 
 	"github.com/astaxie/beego/validation"
-	"github.com/goharbor/harbor/src/common/job"
-	"github.com/goharbor/harbor/src/common/job/models"
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common/job"
+	"github.com/XiaYinchang/harbor/src/common/job/models"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 const (

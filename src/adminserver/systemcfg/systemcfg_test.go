@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common"
 	"github.com/stretchr/testify/assert"
 )
 

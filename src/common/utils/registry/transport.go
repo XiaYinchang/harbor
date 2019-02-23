@@ -17,8 +17,8 @@ package registry
 import (
 	"net/http"
 
-	"github.com/goharbor/harbor/src/common/http/modifier"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/http/modifier"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // Transport holds information about base transport and modifiers

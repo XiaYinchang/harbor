@@ -22,12 +22,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	httputil "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	httputil "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
 
 	"github.com/docker/distribution/health"
 	"github.com/gomodule/redigo/redis"

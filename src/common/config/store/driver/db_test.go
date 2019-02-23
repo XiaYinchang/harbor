@@ -14,8 +14,8 @@
 package driver
 
 import (
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/dao"
 	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"

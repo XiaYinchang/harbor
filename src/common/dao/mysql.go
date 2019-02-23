@@ -20,7 +20,7 @@ import (
 
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql" // register mysql driver
-	"github.com/goharbor/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils"
 )
 
 type mysql struct {

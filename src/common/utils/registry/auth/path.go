@@ -17,9 +17,9 @@ package auth
 import (
 	"regexp"
 
-	"github.com/docker/distribution/digest"
+	"github.com/opencontainers/go-digest"
 	"github.com/docker/distribution/reference"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 var (

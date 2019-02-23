@@ -16,7 +16,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 // IndexController handles request to /

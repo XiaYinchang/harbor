@@ -17,8 +17,8 @@ package env
 import (
 	"context"
 
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
 )
 
 // JobContext is combination of BaseContext and other job specified resources.

@@ -17,9 +17,9 @@ package trigger
 import (
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/replication"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

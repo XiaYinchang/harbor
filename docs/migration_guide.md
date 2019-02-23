@@ -35,7 +35,7 @@ or above it's not necessary to call the migrator tool to migrate the schema.
     ```
 
 3. Get the latest Harbor release package from Github:
-   https://github.com/goharbor/harbor/releases
+   https://github.com/XiaYinchang/harbor/releases
 
 4. Before upgrading Harbor, perform migration first.  The migration tool is delivered as a docker image, so you should pull the image from docker hub. Replace [tag] with the release version of Harbor (e.g. v1.5.0) in the below command:
     ```

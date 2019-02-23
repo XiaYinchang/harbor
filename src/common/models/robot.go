@@ -16,7 +16,7 @@ package models
 
 import (
 	"github.com/astaxie/beego/validation"
-	"github.com/goharbor/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
 	"time"
 )
 

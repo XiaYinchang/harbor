@@ -20,7 +20,7 @@ import (
 	"sync"
 
 	"github.com/astaxie/beego/orm"
-	"github.com/goharbor/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/dao"
 )
 
 const (

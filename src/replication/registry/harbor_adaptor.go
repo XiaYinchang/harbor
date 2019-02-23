@@ -1,12 +1,12 @@
 package registry
 
 import (
-	"github.com/goharbor/harbor/src/common/dao"
-	common_models "github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/utils"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	common_models "github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // TODO refacotor the methods of HarborAdaptor by caling Harbor's API

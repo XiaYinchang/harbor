@@ -20,8 +20,8 @@ import (
 
 	"github.com/gocraft/work"
 
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 	"github.com/gomodule/redigo/redis"
 )
 

@@ -3,7 +3,7 @@ package logger
 import (
 	"errors"
 
-	"github.com/goharbor/harbor/src/jobservice/logger/sweeper"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/sweeper"
 )
 
 // SweeperFactory is responsible for creating a sweeper.Interface based on the settings

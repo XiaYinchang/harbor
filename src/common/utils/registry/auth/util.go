@@ -21,9 +21,9 @@ import (
 	"net/url"
 
 	"github.com/docker/distribution/registry/auth/token"
-	commonhttp "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/registry"
+	commonhttp "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/registry"
 )
 
 const (

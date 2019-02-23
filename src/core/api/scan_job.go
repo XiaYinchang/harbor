@@ -15,11 +15,11 @@
 package api
 
 import (
-	"github.com/goharbor/harbor/src/common/dao"
-	common_http "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/utils"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/utils"
 
 	"fmt"
 	"net/http"

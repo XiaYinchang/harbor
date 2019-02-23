@@ -18,14 +18,14 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/config"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/models"
 	"k8s.io/helm/cmd/helm/search"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	member "github.com/goharbor/harbor/src/common/dao/project"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	member "github.com/XiaYinchang/harbor/src/common/dao/project"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	helm_repo "k8s.io/helm/pkg/repo"

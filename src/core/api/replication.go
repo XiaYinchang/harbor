@@ -19,14 +19,14 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	api_models "github.com/goharbor/harbor/src/core/api/models"
-	"github.com/goharbor/harbor/src/core/notifier"
-	"github.com/goharbor/harbor/src/replication/core"
-	"github.com/goharbor/harbor/src/replication/event/notification"
-	"github.com/goharbor/harbor/src/replication/event/topic"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	api_models "github.com/XiaYinchang/harbor/src/core/api/models"
+	"github.com/XiaYinchang/harbor/src/core/notifier"
+	"github.com/XiaYinchang/harbor/src/replication/core"
+	"github.com/XiaYinchang/harbor/src/replication/event/notification"
+	"github.com/XiaYinchang/harbor/src/replication/event/topic"
 
 	"github.com/docker/distribution/uuid"
 )

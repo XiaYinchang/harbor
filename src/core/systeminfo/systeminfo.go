@@ -17,8 +17,8 @@ package systeminfo
 import (
 	"os"
 
-	"github.com/goharbor/harbor/src/core/systeminfo/imagestorage"
-	"github.com/goharbor/harbor/src/core/systeminfo/imagestorage/filesystem"
+	"github.com/XiaYinchang/harbor/src/core/systeminfo/imagestorage"
+	"github.com/XiaYinchang/harbor/src/core/systeminfo/imagestorage/filesystem"
 )
 
 // Init image storage driver

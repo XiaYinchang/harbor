@@ -4,7 +4,7 @@ import (
 	"net/http/httptest"
 	"net/url"
 
-	"github.com/goharbor/harbor/src/testing"
+	"github.com/XiaYinchang/harbor/src/testing"
 )
 
 // createMockObjects create mock objects for chart repo related testing.

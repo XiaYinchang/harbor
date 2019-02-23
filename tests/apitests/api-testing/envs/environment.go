@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/goharbor/harbor/tests/apitests/api-testing/client"
+	"github.com/XiaYinchang/harbor/tests/apitests/api-testing/client"
 )
 
 //Environment keeps the testing env info

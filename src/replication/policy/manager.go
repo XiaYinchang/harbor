@@ -18,11 +18,11 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	persist_models "github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	persist_models "github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // Manager defines the method a policy manger should implement

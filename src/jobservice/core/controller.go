@@ -18,12 +18,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/goharbor/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
 
-	"github.com/goharbor/harbor/src/jobservice/job"
-	"github.com/goharbor/harbor/src/jobservice/models"
-	"github.com/goharbor/harbor/src/jobservice/pool"
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/job"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/pool"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 	"github.com/robfig/cron"
 )
 

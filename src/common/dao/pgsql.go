@@ -23,8 +23,8 @@ import (
 	_ "github.com/golang-migrate/migrate/database/postgres" // import pgsql driver for migrator
 	_ "github.com/golang-migrate/migrate/source/file"       // import local file driver for migrator
 
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 	_ "github.com/lib/pq" // register pgsql driver
 )
 

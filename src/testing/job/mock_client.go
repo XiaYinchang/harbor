@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/job"
-	"github.com/goharbor/harbor/src/common/job/models"
+	"github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/job"
+	"github.com/XiaYinchang/harbor/src/common/job/models"
 )
 
 // MockJobClient ...

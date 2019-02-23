@@ -15,8 +15,8 @@
 package security
 
 import (
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
 )
 
 // Context abstracts the operations related with authN and authZ

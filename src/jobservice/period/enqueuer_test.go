@@ -19,10 +19,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/opm"
+	"github.com/XiaYinchang/harbor/src/jobservice/opm"
 
-	"github.com/goharbor/harbor/src/jobservice/tests"
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/tests"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 )
 
 func TestPeriodicEnqueuerStartStop(t *testing.T) {

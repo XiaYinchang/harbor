@@ -18,7 +18,7 @@ import (
 	"time"
 
 	"github.com/astaxie/beego/validation"
-	"github.com/goharbor/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils"
 )
 
 const (

@@ -18,7 +18,7 @@ import (
 	"encoding/json"
 	"sync"
 
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 )
 
 const (

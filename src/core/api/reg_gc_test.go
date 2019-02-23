@@ -3,9 +3,9 @@ package api
 import (
 	"testing"
 
-	common_models "github.com/goharbor/harbor/src/common/models"
-	api_modes "github.com/goharbor/harbor/src/core/api/models"
-	"github.com/goharbor/harbor/tests/apitests/apilib"
+	common_models "github.com/XiaYinchang/harbor/src/common/models"
+	api_modes "github.com/XiaYinchang/harbor/src/core/api/models"
+	"github.com/XiaYinchang/harbor/tests/apitests/apilib"
 	"github.com/stretchr/testify/assert"
 )
 

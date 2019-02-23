@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/goharbor/harbor/src/jobservice/logger/backend"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/backend"
 	"reflect"
 	"strings"
 )

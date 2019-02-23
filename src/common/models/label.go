@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/astaxie/beego/validation"
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common"
 )
 
 // Label holds information used for a label

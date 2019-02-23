@@ -1,7 +1,7 @@
 package proxy
 
 import (
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/config"
 
 	"fmt"
 	"net/http"

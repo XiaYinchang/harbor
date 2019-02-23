@@ -19,15 +19,15 @@ import (
 	"fmt"
 	"reflect"
 
-	common_models "github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/notifier"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/event/notification"
-	"github.com/goharbor/harbor/src/replication/event/topic"
-	"github.com/goharbor/harbor/src/replication/models"
-	"github.com/goharbor/harbor/src/replication/trigger"
+	common_models "github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/notifier"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/event/notification"
+	"github.com/XiaYinchang/harbor/src/replication/event/topic"
+	"github.com/XiaYinchang/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/trigger"
 )
 
 // OnPushHandler implements the notification handler interface to handle image on push event.

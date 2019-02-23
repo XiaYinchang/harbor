@@ -21,15 +21,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/errs"
-	"github.com/goharbor/harbor/src/jobservice/job"
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/models"
-	"github.com/goharbor/harbor/src/jobservice/opm"
+	"github.com/XiaYinchang/harbor/src/jobservice/errs"
+	"github.com/XiaYinchang/harbor/src/jobservice/job"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/opm"
 
-	"github.com/goharbor/harbor/src/jobservice/tests"
+	"github.com/XiaYinchang/harbor/src/jobservice/tests"
 
-	"github.com/goharbor/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
 )
 
 var rPool = tests.GiveMeRedisPool()

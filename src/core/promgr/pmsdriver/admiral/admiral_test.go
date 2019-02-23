@@ -19,8 +19,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/models"
-	errutil "github.com/goharbor/harbor/src/common/utils/error"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	errutil "github.com/XiaYinchang/harbor/src/common/utils/error"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

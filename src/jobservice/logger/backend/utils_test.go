@@ -3,7 +3,7 @@ package backend
 import (
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // Test parseLevel

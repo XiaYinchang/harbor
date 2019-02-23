@@ -24,11 +24,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/goharbor/harbor/src/jobservice/core"
-	"github.com/goharbor/harbor/src/jobservice/errs"
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/models"
-	"github.com/goharbor/harbor/src/jobservice/opm"
+	"github.com/XiaYinchang/harbor/src/jobservice/core"
+	"github.com/XiaYinchang/harbor/src/jobservice/errs"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/opm"
 )
 
 // Handler defines approaches to handle the http requests.

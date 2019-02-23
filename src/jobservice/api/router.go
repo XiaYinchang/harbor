@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/goharbor/harbor/src/jobservice/errs"
-	"github.com/goharbor/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/errs"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
 	"github.com/gorilla/mux"
 )
 

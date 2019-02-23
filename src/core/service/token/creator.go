@@ -21,13 +21,13 @@ import (
 	"strings"
 
 	"github.com/docker/distribution/registry/auth/token"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/security"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/filter"
-	"github.com/goharbor/harbor/src/core/promgr"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/security"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/filter"
+	"github.com/XiaYinchang/harbor/src/core/promgr"
 )
 
 var creatorMap map[string]Creator

@@ -17,12 +17,12 @@ package admin
 import (
 	"encoding/json"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/job"
-	job_model "github.com/goharbor/harbor/src/common/job/models"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/api"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/job"
+	job_model "github.com/XiaYinchang/harbor/src/common/job/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/api"
 )
 
 var statusMap = map[string]string{

@@ -1,11 +1,11 @@
 package proxy
 
 import (
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/models"
-	notarytest "github.com/goharbor/harbor/src/common/utils/notary/test"
-	testutils "github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	notarytest "github.com/XiaYinchang/harbor/src/common/utils/notary/test"
+	testutils "github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/core/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 

@@ -20,9 +20,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/errs"
-	"github.com/goharbor/harbor/src/jobservice/opm"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/errs"
+	"github.com/XiaYinchang/harbor/src/jobservice/opm"
 )
 
 // DemoJob is the job to demostrate the job interface.

@@ -22,16 +22,16 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/goharbor/harbor/src/common"
-	comcfg "github.com/goharbor/harbor/src/common/config"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/jobservice/config"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/job"
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/jobservice/logger/sweeper"
-	jmodel "github.com/goharbor/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/common"
+	comcfg "github.com/XiaYinchang/harbor/src/common/config"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/config"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/job"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/sweeper"
+	jmodel "github.com/XiaYinchang/harbor/src/jobservice/models"
 )
 
 const (

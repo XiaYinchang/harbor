@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common"
 )
 
 var adminServerDefaultConfig = map[string]interface{}{

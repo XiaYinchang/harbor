@@ -18,8 +18,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/goharbor/harbor/src/adminserver/auth"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/adminserver/auth"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 	gorilla_handlers "github.com/gorilla/handlers"
 )
 

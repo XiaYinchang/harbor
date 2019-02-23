@@ -14,7 +14,7 @@
 
 package pool
 
-import "github.com/goharbor/harbor/src/jobservice/models"
+import "github.com/XiaYinchang/harbor/src/jobservice/models"
 
 // Interface for worker pool.
 // More like a driver to transparent the lower queue.

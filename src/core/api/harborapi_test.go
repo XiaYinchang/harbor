@@ -27,12 +27,12 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/goharbor/harbor/src/common/job/test"
-	"github.com/goharbor/harbor/src/common/models"
-	testutils "github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/core/config"
-	"github.com/goharbor/harbor/src/core/filter"
-	"github.com/goharbor/harbor/tests/apitests/apilib"
+	"github.com/XiaYinchang/harbor/src/common/job/test"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	testutils "github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/core/filter"
+	"github.com/XiaYinchang/harbor/tests/apitests/apilib"
 
 	//	"strconv"
 	//	"strings"
@@ -40,11 +40,11 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/dghubble/sling"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	_ "github.com/goharbor/harbor/src/core/auth/db"
-	_ "github.com/goharbor/harbor/src/core/auth/ldap"
-	"github.com/goharbor/harbor/src/replication/core"
-	_ "github.com/goharbor/harbor/src/replication/event"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	_ "github.com/XiaYinchang/harbor/src/core/auth/db"
+	_ "github.com/XiaYinchang/harbor/src/core/auth/ldap"
+	"github.com/XiaYinchang/harbor/src/replication/core"
+	_ "github.com/XiaYinchang/harbor/src/replication/event"
 )
 
 const (

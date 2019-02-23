@@ -20,15 +20,15 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	api_models "github.com/goharbor/harbor/src/core/api/models"
-	"github.com/goharbor/harbor/src/core/promgr"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/core"
-	rep_models "github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	api_models "github.com/XiaYinchang/harbor/src/core/api/models"
+	"github.com/XiaYinchang/harbor/src/core/promgr"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/core"
+	rep_models "github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // RepPolicyAPI handles /api/replicationPolicies /api/replicationPolicies/:id/enablement

@@ -28,15 +28,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/goharbor/harbor/src/common"
-	comcfg "github.com/goharbor/harbor/src/common/config"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/secret"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/promgr"
-	"github.com/goharbor/harbor/src/core/promgr/pmsdriver"
-	"github.com/goharbor/harbor/src/core/promgr/pmsdriver/admiral"
-	"github.com/goharbor/harbor/src/core/promgr/pmsdriver/local"
+	"github.com/XiaYinchang/harbor/src/common"
+	comcfg "github.com/XiaYinchang/harbor/src/common/config"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/secret"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/promgr"
+	"github.com/XiaYinchang/harbor/src/core/promgr/pmsdriver"
+	"github.com/XiaYinchang/harbor/src/core/promgr/pmsdriver/admiral"
+	"github.com/XiaYinchang/harbor/src/core/promgr/pmsdriver/local"
 )
 
 const (

@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/replication/event/notification"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/replication/event/notification"
 )
 
 // OnDeletionHandler implements the notification handler interface to handle image on push event.

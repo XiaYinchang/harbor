@@ -21,7 +21,7 @@ import (
 
 	"os/exec"
 
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 const (

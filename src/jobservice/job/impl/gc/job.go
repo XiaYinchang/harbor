@@ -20,12 +20,12 @@ import (
 	"time"
 
 	"github.com/garyburd/redigo/redis"
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/config"
-	"github.com/goharbor/harbor/src/common/registryctl"
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/logger"
-	"github.com/goharbor/harbor/src/registryctl/client"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/config"
+	"github.com/XiaYinchang/harbor/src/common/registryctl"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger"
+	"github.com/XiaYinchang/harbor/src/registryctl/client"
 )
 
 const (

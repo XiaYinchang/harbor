@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/goharbor/harbor/src/jobservice/logger/sweeper"
+	"github.com/XiaYinchang/harbor/src/jobservice/logger/sweeper"
 )
 
 const (

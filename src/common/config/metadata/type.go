@@ -18,7 +18,7 @@ package metadata
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common"
 	"strconv"
 	"strings"
 )

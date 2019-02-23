@@ -17,13 +17,13 @@ package auth
 import (
 	"errors"
 	"fmt"
+	"os"
 	"time"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 // 1.5 seconds
@@ -60,7 +60,6 @@ func NewErrAuth(msg string) ErrAuth {
 
 // AuthenticateHelper provides interface for user management in different auth modes.
 type AuthenticateHelper interface {
-
 	// Authenticate authenticate the user based on data in m.  Only when the error returned is an instance
 	// of ErrAuth, it will be considered a bad credentials, other errors will be treated as server side error.
 	Authenticate(m models.AuthModel) (*models.User, error)
@@ -133,7 +132,11 @@ func Login(m models.AuthModel) (*models.User, error) {
 	if err != nil {
 		return nil, err
 	}
-	if authMode == "" || dao.IsSuperUser(m.Principal) {
+	envMode := os.Getenv("AUTH_MODE")
+	if envMode != "" {
+		authMode = envMode
+	}
+	if authMode == "" {
 		authMode = common.DBAuth
 	}
 	log.Debug("Current AUTH_MODE is ", authMode)

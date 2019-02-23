@@ -18,10 +18,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/models"
-	api_models "github.com/goharbor/harbor/src/core/api/models"
-	"github.com/goharbor/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	api_models "github.com/XiaYinchang/harbor/src/core/api/models"
+	"github.com/XiaYinchang/harbor/src/replication"
 	"github.com/stretchr/testify/require"
 )
 

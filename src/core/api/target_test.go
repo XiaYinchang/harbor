@@ -20,7 +20,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/goharbor/harbor/tests/apitests/apilib"
+	"github.com/XiaYinchang/harbor/tests/apitests/apilib"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

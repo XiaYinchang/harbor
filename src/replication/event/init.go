@@ -15,9 +15,9 @@
 package event
 
 import (
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/core/notifier"
-	"github.com/goharbor/harbor/src/replication/event/topic"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/core/notifier"
+	"github.com/XiaYinchang/harbor/src/replication/event/topic"
 )
 
 // Subscribe related topics

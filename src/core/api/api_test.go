@@ -25,16 +25,16 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goharbor/harbor/src/chartserver"
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/chartserver"
+	"github.com/XiaYinchang/harbor/src/common"
 
 	"github.com/astaxie/beego"
 	"github.com/dghubble/sling"
-	"github.com/goharbor/harbor/src/common/dao"
-	"github.com/goharbor/harbor/src/common/dao/project"
-	common_http "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/models"
-	htesting "github.com/goharbor/harbor/src/testing"
+	"github.com/XiaYinchang/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/dao/project"
+	common_http "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	htesting "github.com/XiaYinchang/harbor/src/testing"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

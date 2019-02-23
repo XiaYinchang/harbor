@@ -30,8 +30,8 @@ import (
 	"github.com/docker/distribution/manifest/schema1"
 	"github.com/docker/distribution/manifest/schema2"
 
-	commonhttp "github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/utils"
+	commonhttp "github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/utils"
 )
 
 // Repository holds information of a repository entity

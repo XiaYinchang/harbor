@@ -15,7 +15,7 @@
 package source
 
 import (
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // DefaultFilterChain provides a default implement for interface FilterChain

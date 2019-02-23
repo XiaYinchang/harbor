@@ -17,9 +17,9 @@ package event
 import (
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/replication/core"
-	"github.com/goharbor/harbor/src/replication/event/notification"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/replication/core"
+	"github.com/XiaYinchang/harbor/src/replication/event/notification"
 	"github.com/stretchr/testify/assert"
 )
 

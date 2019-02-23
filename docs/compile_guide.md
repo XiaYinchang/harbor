@@ -21,7 +21,7 @@ golang*               | 1.7.3 +
 ## Step 2: Getting the source code
 
    ```sh
-      $ git clone https://github.com/goharbor/harbor
+      $ git clone https://github.com/XiaYinchang/harbor
    ```
 
 ## Step 3: Building and installing Harbor
@@ -78,14 +78,14 @@ You can compile the code by one of the three approaches:
 *  Build, install and run Harbor without Notary and Clair:
 
    ```sh
-      $ cd $GOPATH/src/github.com/goharbor/harbor
+      $ cd $GOPATH/src/github.com/XiaYinchang/harbor
       $ make install
    ```
 
 *  Build, install and run Harbor with Notary and Clair:
 
    ```sh
-      $ cd $GOPATH/src/github.com/goharbor/harbor
+      $ cd $GOPATH/src/github.com/XiaYinchang/harbor
       $ make install -e NOTARYFLAG=true CLAIRFLAG=true
    ```   
  

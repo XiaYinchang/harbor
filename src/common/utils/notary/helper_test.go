@@ -17,9 +17,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	notarytest "github.com/goharbor/harbor/src/common/utils/notary/test"
-	"github.com/goharbor/harbor/src/common/utils/test"
-	"github.com/goharbor/harbor/src/core/config"
+	notarytest "github.com/XiaYinchang/harbor/src/common/utils/notary/test"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/core/config"
 	"github.com/stretchr/testify/assert"
 
 	"net/http/httptest"
@@ -27,8 +27,8 @@ import (
 	"path"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 var endpoint = "10.117.4.142"

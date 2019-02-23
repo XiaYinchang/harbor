@@ -6,9 +6,9 @@ import (
 	"io/ioutil"
 	"path"
 
-	"github.com/goharbor/harbor/src/jobservice/errs"
+	"github.com/XiaYinchang/harbor/src/jobservice/errs"
 
-	"github.com/goharbor/harbor/src/jobservice/utils"
+	"github.com/XiaYinchang/harbor/src/jobservice/utils"
 )
 
 // FileGetter is responsible for retrieving file log data

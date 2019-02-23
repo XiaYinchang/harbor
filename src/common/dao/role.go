@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	"github.com/astaxie/beego/orm"
-	"github.com/goharbor/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/models"
 )
 
 // GetUserProjectRoles returns roles that the user has according to the project.

@@ -15,8 +15,8 @@
 package job
 
 import (
-	"github.com/goharbor/harbor/src/jobservice/env"
-	"github.com/goharbor/harbor/src/jobservice/models"
+	"github.com/XiaYinchang/harbor/src/jobservice/env"
+	"github.com/XiaYinchang/harbor/src/jobservice/models"
 )
 
 // CheckOPCmdFunc is the function to check if the related operation commands

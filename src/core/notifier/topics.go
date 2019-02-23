@@ -1,7 +1,7 @@
 package notifier
 
 import (
-	"github.com/goharbor/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/common"
 )
 
 // Define global topic names

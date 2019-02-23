@@ -15,11 +15,11 @@
 package admiral
 
 import (
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/rbac"
-	"github.com/goharbor/harbor/src/common/rbac/project"
-	"github.com/goharbor/harbor/src/common/security/admiral/authcontext"
-	"github.com/goharbor/harbor/src/core/promgr"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/rbac"
+	"github.com/XiaYinchang/harbor/src/common/rbac/project"
+	"github.com/XiaYinchang/harbor/src/common/security/admiral/authcontext"
+	"github.com/XiaYinchang/harbor/src/core/promgr"
 )
 
 // SecurityContext implements security.Context interface based on

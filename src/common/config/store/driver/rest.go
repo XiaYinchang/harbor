@@ -2,9 +2,9 @@ package driver
 
 import (
 	"errors"
-	"github.com/goharbor/harbor/src/common/http"
-	"github.com/goharbor/harbor/src/common/http/modifier"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/http"
+	"github.com/XiaYinchang/harbor/src/common/http/modifier"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // RESTDriver - config store driver based on REST API

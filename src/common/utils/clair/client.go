@@ -23,8 +23,8 @@ import (
 	"strings"
 	//	"path"
 
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
 )
 
 // Client communicates with clair endpoint to scan image and get detailed scan result

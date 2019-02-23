@@ -18,9 +18,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/models"
-	errutil "github.com/goharbor/harbor/src/common/utils/error"
-	"github.com/goharbor/harbor/src/common/utils/test"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	errutil "github.com/XiaYinchang/harbor/src/common/utils/error"
+	"github.com/XiaYinchang/harbor/src/common/utils/test"
 	"github.com/stretchr/testify/assert"
 )
 

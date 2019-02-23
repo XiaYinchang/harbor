@@ -18,17 +18,17 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/goharbor/harbor/src/common/dao"
+	"github.com/XiaYinchang/harbor/src/common/dao"
 	"github.com/stretchr/testify/require"
 
-	"github.com/goharbor/harbor/src/common/api"
-	"github.com/goharbor/harbor/src/common/models"
-	"github.com/goharbor/harbor/tests/apitests/apilib"
+	"github.com/XiaYinchang/harbor/src/common/api"
+	"github.com/XiaYinchang/harbor/src/common/models"
+	"github.com/XiaYinchang/harbor/tests/apitests/apilib"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/astaxie/beego"
-	"github.com/goharbor/harbor/src/common"
-	"github.com/goharbor/harbor/src/core/config"
+	"github.com/XiaYinchang/harbor/src/common"
+	"github.com/XiaYinchang/harbor/src/core/config"
 )
 
 var testUser0002ID, testUser0003ID int

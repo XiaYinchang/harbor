@@ -17,10 +17,10 @@ package source
 import (
 	"strings"
 
-	"github.com/goharbor/harbor/src/common/utils/log"
-	"github.com/goharbor/harbor/src/replication"
-	"github.com/goharbor/harbor/src/replication/models"
-	"github.com/goharbor/harbor/src/replication/registry"
+	"github.com/XiaYinchang/harbor/src/common/utils/log"
+	"github.com/XiaYinchang/harbor/src/replication"
+	"github.com/XiaYinchang/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/registry"
 )
 
 // TagFilter implements Filter interface to filter tag

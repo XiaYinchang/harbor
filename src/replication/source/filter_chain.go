@@ -1,7 +1,7 @@
 package source
 
 import (
-	"github.com/goharbor/harbor/src/replication/models"
+	"github.com/XiaYinchang/harbor/src/replication/models"
 )
 
 // FilterChain is the interface to define the operations of coordinating multiple filters
