@@ -184,6 +184,7 @@ export const HTTP_JSON_OPTIONS: RequestOptions = new RequestOptions({
     headers: new Headers({
         "Content-Type": 'application/json',
         "Accept": 'application/json',
+        "X-Auth-Token": localStorage.getItem('token')
     })
 });
 export const HTTP_GET_OPTIONS: RequestOptions = new RequestOptions({
@@ -191,13 +192,15 @@ export const HTTP_GET_OPTIONS: RequestOptions = new RequestOptions({
         "Content-Type": 'application/json',
         "Accept": 'application/json',
         "Cache-Control": 'no-cache',
-        "Pragma": 'no-cache'
+        "Pragma": 'no-cache',
+        "X-Auth-Token": localStorage.getItem('token')
     })
 });
 
 export const HTTP_FORM_OPTIONS: RequestOptions = new RequestOptions({
     headers: new Headers({
-        "Content-Type": 'application/x-www-form-urlencoded'
+        "Content-Type": 'application/x-www-form-urlencoded',
+        "X-Auth-Token": localStorage.getItem('token')
     })
 });
 /**
@@ -213,7 +216,8 @@ export function buildHttpRequestOptions(params: RequestQueryParams): RequestOpti
             "Content-Type": 'application/json',
             "Accept": 'application/json',
             "Cache-Control": 'no-cache',
-            "Pragma": 'no-cache'
+            "Pragma": 'no-cache',
+            "X-Auth-Token": localStorage.getItem('token')
         })
     });
 

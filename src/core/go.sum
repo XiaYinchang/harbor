@@ -22,6 +22,9 @@ github.com/Unknwon/goconfig v0.0.0-20181105214110-56bd8ab18619/go.mod h1:wngxua9
 github.com/XiaYinchang/harbor/src/core v0.0.0-20190223151843-5a89c0815e3e/go.mod h1:5QrPbWC4iNKOyf53U9zAW9eZ3dTqEsmSvcmG/uz1gbE=
 github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190221100822-1a1dfd748c42 h1:VidTENDiOI0t1uywzNCtmLFl+kZzjaa3YnrcF9w3/s0=
 github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190221100822-1a1dfd748c42/go.mod h1:sS1kEqwabo0DU1c/AEfdB6fITYuh9ZlY3bO2IySyyCY=
+github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190225051508-0161c84cbbeb/go.mod h1:sS1kEqwabo0DU1c/AEfdB6fITYuh9ZlY3bO2IySyyCY=
+github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190225053546-63bdfa86437d h1:XXcZa5E4u7BYDnAC6MiSvpIq0bvpIH3S5xBjSnjY3F4=
+github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190225053546-63bdfa86437d/go.mod h1:sS1kEqwabo0DU1c/AEfdB6fITYuh9ZlY3bO2IySyyCY=
 github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412 h1:w1UutsfOrms1J05zt7ISrnJIXKzwaspym5BTKGx93EI=
 github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412/go.mod h1:WPjqKcmVOxf0XSf3YxCJs6N6AOSrOx3obionmG7T0y0=
 github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239/go.mod h1:2FmKhYUyUczH0OGQWaF5ceTx0UBShxjsH6f8oGKYe2c=

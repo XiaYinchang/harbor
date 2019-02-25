@@ -2,7 +2,7 @@ module github.com/XiaYinchang/harbor/src/core
 
 require (
 	github.com/XiaYinchang/harbor v1.7.3
-	github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190221100822-1a1dfd748c42
+	github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190225053546-63bdfa86437d
 	github.com/astaxie/beego v1.11.1
 	github.com/beego/i18n v0.0.0-20161101132742-e9308947f407
 	github.com/dghubble/sling v1.2.0

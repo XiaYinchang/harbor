@@ -64,21 +64,17 @@ func (d *Auth) Authenticate(m models.AuthModel) (*models.User, error) {
 		UserName:   keyConfig.KeystoneUser,
 		Password:   keyConfig.KeystonePass,
 	}
-	log.Debug("keystone auth url", keyConfig.KeystoneURL)
-	log.Debug("keystone auth domain", keyConfig.KeystoneDomain)
-	log.Debug("keystone auth user", keyConfig.KeystoneUser)
-	log.Debug("keystone auth pass", keyConfig.KeystonePass)
 	client, err := keystone.NewClient(authInfo)
 	if err != nil {
 		return nil, err
 	}
 	u := models.User{}
 	u.Username = client.AuthInfo.UserName
-	u.Email = ""
-	u.Realname = client.AuthInfo.UserName
-	u.HasAdminRole = dao.IsSuperUser(client.AuthInfo.UserName)
-	log.Debugf("user info  %v", u)
-	return &u, nil
+	detailedUserInfo, err := dao.GetUser(u)
+	if err != nil {
+		return nil, err
+	}
+	return detailedUserInfo, nil
 }
 
 // SearchUser - Check if user exist in local db
@@ -86,7 +82,6 @@ func (d *Auth) SearchUser(username string) (*models.User, error) {
 	var queryCondition = models.User{
 		Username: username,
 	}
-
 	return dao.GetUser(queryCondition)
 }
 

@@ -18,10 +18,9 @@ import (
 	"context"
 	"fmt"
 	"net/http"
+	"os"
 	"regexp"
 
-	beegoctx "github.com/astaxie/beego/context"
-	"github.com/docker/distribution/reference"
 	"github.com/XiaYinchang/harbor/src/common"
 	"github.com/XiaYinchang/harbor/src/common/dao"
 	"github.com/XiaYinchang/harbor/src/common/models"
@@ -38,6 +37,9 @@ import (
 	"github.com/XiaYinchang/harbor/src/core/config"
 	"github.com/XiaYinchang/harbor/src/core/promgr"
 	"github.com/XiaYinchang/harbor/src/core/promgr/pmsdriver/admiral"
+	beegoctx "github.com/astaxie/beego/context"
+	"github.com/docker/distribution/reference"
+	"github.com/XiaYinchang/keystone-go-sdk/keystone"
 	"strings"
 )
 
@@ -101,6 +103,7 @@ func Init() {
 	reqCtxModifiers = []ReqCtxModifier{
 		&secretReqCtxModifier{config.SecretStore},
 		&robotAuthReqCtxModifier{},
+		&keystoneReqCtxModifier{},
 		&basicAuthReqCtxModifier{},
 		&sessionReqCtxModifier{},
 		&unauthorizedReqCtxModifier{}}
@@ -325,6 +328,39 @@ func (t *tokenReqCtxModifier) Modify(ctx *beegoctx.Context) bool {
 	log.Debug("creating admiral security context...")
 	securCtx := admr.NewSecurityContext(authContext, pm)
 	setSecurCtxAndPM(ctx.Request, securCtx, pm)
+
+	return true
+}
+
+type keystoneReqCtxModifier struct{}
+
+func (t *keystoneReqCtxModifier) Modify(ctx *beegoctx.Context) bool {
+	token := ctx.Request.Header.Get("X-Auth-Token")
+	if len(token) == 0 {
+		return false
+	}
+
+	log.Debug("got keystone token from request")
+
+	client, err := keystone.NewClientWithToken(keystone.KeystoneAuth{
+		Token: token,
+		AuthURL:os.Getenv("OS_AUTH_URL"),
+	})
+	if err != nil {
+		log.Errorf("validate keystone token err : %v", err)
+		return false
+	}
+
+	log.Debug("creating PMS project manager...")
+	user := &models.User{
+		Username: client.AuthInfo.UserName,
+	}
+
+	pm := config.GlobalProjectMgr
+
+	log.Debug("creating keystone security context...")
+	secureCtx := local.NewSecurityContext(user, pm)
+	setSecurCtxAndPM(ctx.Request, secureCtx, pm)
 
 	return true
 }
