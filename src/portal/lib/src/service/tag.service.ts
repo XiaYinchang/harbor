@@ -123,10 +123,10 @@ export class TagDefaultService extends TagService {
     super();
     this._baseUrl = this.config.repositoryBaseEndpoint
       ? this.config.repositoryBaseEndpoint
-      : "/api/repositories";
+      : "/uai-harbor/api/repositories";
     this._labelUrl = this.config.labelEndpoint
       ? this.config.labelEndpoint
-      : "/api/labels";
+      : "/uai-harbor/api/labels";
   }
 
   // Private methods

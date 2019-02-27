@@ -6,8 +6,8 @@ import { SERVICE_CONFIG, IServiceConfig } from '../service.config';
 
 describe('JobLogService', () => {
   const mockConfig: IServiceConfig = {
-    replicationJobEndpoint: "/api/jobs/replication/testing",
-    scanJobEndpoint: "/api/jobs/scan/testing"
+    replicationJobEndpoint: "/uai-harbor/api/jobs/replication/testing",
+    scanJobEndpoint: "/uai-harbor/api/jobs/scan/testing"
   };
 
   let config: IServiceConfig;
@@ -33,7 +33,7 @@ describe('JobLogService', () => {
 
   it('should be initialized', inject([JobLogDefaultService], (service: JobLogService) => {
     expect(service).toBeTruthy();
-    expect(config.replicationJobEndpoint).toEqual("/api/jobs/replication/testing");
-    expect(config.scanJobEndpoint).toEqual("/api/jobs/scan/testing");
+    expect(config.replicationJobEndpoint).toEqual("/uai-harbor/api/jobs/replication/testing");
+    expect(config.scanJobEndpoint).toEqual("/uai-harbor/api/jobs/scan/testing");
   }));
 });

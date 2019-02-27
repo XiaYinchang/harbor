@@ -1,15 +1,13 @@
-
-import {throwError as observableThrowError,  Observable } from "rxjs";
+import { throwError as observableThrowError, Observable } from "rxjs";
 import { Injectable, Inject } from "@angular/core";
 import { Http, Response, ResponseContentType } from "@angular/http";
 import { map, catchError } from "rxjs/operators";
-import {HttpErrorResponse} from "@angular/common/http";
+import { HttpErrorResponse } from "@angular/common/http";
 
 import { RequestQueryParams } from "./RequestQueryParams";
 import { HelmChartItem, HelmChartVersion, HelmChartDetail } from "./interface";
 import { SERVICE_CONFIG, IServiceConfig } from "../service.config";
 import { HTTP_JSON_OPTIONS, HTTP_GET_OPTIONS } from "../utils";
-
 
 /**
  * Define service methods for handling the helmchart related things.
@@ -35,7 +33,10 @@ export abstract class HelmChartService {
    *  ** deprecated param projectId Id of the project
    *  ** deprecated param chartId ID of helmChart in this specific project
    */
-  abstract deleteHelmChart(projectId: number | string, chartName: string): Observable<any>;
+  abstract deleteHelmChart(
+    projectId: number | string,
+    chartName: string
+  ): Observable<any>;
 
   /**
    * Get all the versions of helmchart
@@ -45,7 +46,7 @@ export abstract class HelmChartService {
    */
   abstract getChartVersions(
     projectName: string,
-    chartName: string,
+    chartName: string
   ): Observable<HelmChartVersion[]>;
 
   /**
@@ -54,7 +55,11 @@ export abstract class HelmChartService {
    *  ** deprecated param chartName ID of the chart you want to delete
    *  ** deprecated param version name of the version
    */
-  abstract deleteChartVersion(projectName: string, chartName: string, version: string): Observable<any>;
+  abstract deleteChartVersion(
+    projectName: string,
+    chartName: string,
+    version: string
+  ): Observable<any>;
 
   /**
    * Get the all details of an helmchart
@@ -66,7 +71,7 @@ export abstract class HelmChartService {
   abstract getChartDetail(
     projectName: string,
     chartname: string,
-    version: string,
+    version: string
   ): Observable<HelmChartDetail>;
 
   /**
@@ -78,7 +83,7 @@ export abstract class HelmChartService {
    */
   abstract downloadChart(
     projectName: string,
-    filename: string,
+    filename: string
   ): Observable<any>;
 
   /**
@@ -87,7 +92,7 @@ export abstract class HelmChartService {
    *  ** deprecated param chart chart file
    *  ** deprecated param prov prov file
    */
-  abstract uploadChart (
+  abstract uploadChart(
     projectName: string,
     chart: File,
     prov: File
@@ -117,81 +122,116 @@ export class HelmChartDefaultService extends HelmChartService {
     return observableThrowError(error.message || error);
   }
 
-  public getHelmCharts(
-    projectName: string,
-  ): Observable<HelmChartItem[]> {
+  public getHelmCharts(projectName: string): Observable<HelmChartItem[]> {
     if (!projectName) {
-      return observableThrowError("Bad argument, No project id to get helm charts");
+      return observableThrowError(
+        "Bad argument, No project id to get helm charts"
+      );
     }
 
     return this.http
-      .get(`${this.config.helmChartEndpoint}/${projectName}/charts`, HTTP_GET_OPTIONS)
+      .get(
+        `${this.config.helmChartEndpoint}/${projectName}/charts`,
+        HTTP_GET_OPTIONS
+      )
       .pipe(
-        map(response => this.extractData(response),
-        catchError(error => this.handleErrorObservable(error))
-      ));
+        map(
+          response => this.extractData(response),
+          catchError(error => this.handleErrorObservable(error))
+        )
+      );
   }
 
-  public deleteHelmChart(projectId: number | string, chartName: string): Observable<any> {
+  public deleteHelmChart(
+    projectId: number | string,
+    chartName: string
+  ): Observable<any> {
     if (!chartName) {
       observableThrowError("Bad argument");
     }
 
     return this.http
-      .delete(`${this.config.helmChartEndpoint}/${projectId}/charts/${chartName}`)
-      .pipe(map(response => {
-        return this.extractData(response);
-      }))
+      .delete(
+        `${this.config.helmChartEndpoint}/${projectId}/charts/${chartName}`
+      )
+      .pipe(
+        map(response => {
+          return this.extractData(response);
+        })
+      )
       .pipe(catchError(this.handleErrorObservable));
   }
 
   public getChartVersions(
     projectName: string,
-    chartName: string,
+    chartName: string
   ): Observable<HelmChartVersion[]> {
-    return this.http.get(`${this.config.helmChartEndpoint}/${projectName}/charts/${chartName}`, HTTP_GET_OPTIONS)
-    .pipe(
-      map(response => this.extractData(response)),
-      catchError(this.handleErrorObservable)
-    );
+    return this.http
+      .get(
+        `${this.config.helmChartEndpoint}/${projectName}/charts/${chartName}`,
+        HTTP_GET_OPTIONS
+      )
+      .pipe(
+        map(response => this.extractData(response)),
+        catchError(this.handleErrorObservable)
+      );
   }
 
-  public deleteChartVersion(projectName: string, chartName: string, version: string): any {
-    return this.http.delete(`${this.config.helmChartEndpoint}/${projectName}/charts/${chartName}/${version}`, HTTP_JSON_OPTIONS)
-    .pipe(map(response => {
-      return this.extractData(response);
-    }))
-    .pipe(catchError(this.handleErrorObservable));
-  }
-
-  public getChartDetail (
+  public deleteChartVersion(
     projectName: string,
     chartName: string,
-    version: string,
-  ): Observable<HelmChartDetail> {
-    return this.http.get(`${this.config.helmChartEndpoint}/${projectName}/charts/${chartName}/${version}`)
-    .pipe(map(response => {
-      return this.extractData(response);
-    }))
-    .pipe(catchError(this.handleErrorObservable));
+    version: string
+  ): any {
+    return this.http
+      .delete(
+        `${
+          this.config.helmChartEndpoint
+        }/${projectName}/charts/${chartName}/${version}`,
+        HTTP_JSON_OPTIONS
+      )
+      .pipe(
+        map(response => {
+          return this.extractData(response);
+        })
+      )
+      .pipe(catchError(this.handleErrorObservable));
   }
 
-  public downloadChart(
+  public getChartDetail(
     projectName: string,
-    filename: string,
-  ): Observable<any> {
-    return this.http.get(`${this.config.downloadChartEndpoint}/${projectName}/${filename}`, {
-      responseType: ResponseContentType.Blob,
-    })
-    .pipe(map(response => {
-      return {
-        filename: filename.split('/')[1],
-        data: response.blob()
-      };
-    }))
-    .pipe(catchError(this.handleErrorObservable));
+    chartName: string,
+    version: string
+  ): Observable<HelmChartDetail> {
+    return this.http
+      .get(
+        `${
+          this.config.helmChartEndpoint
+        }/${projectName}/charts/${chartName}/${version}`,
+        HTTP_JSON_OPTIONS
+      )
+      .pipe(
+        map(response => {
+          return this.extractData(response);
+        })
+      )
+      .pipe(catchError(this.handleErrorObservable));
   }
 
+  public downloadChart(projectName: string, filename: string): Observable<any> {
+    return this.http
+      .get(`${this.config.downloadChartEndpoint}/${projectName}/${filename}`, {
+        responseType: ResponseContentType.Blob
+      })
+      .pipe(
+        map(response => {
+          return {
+            filename: filename.split("/")[1],
+            data: response.blob()
+          };
+        })
+      )
+      .pipe(catchError(this.handleErrorObservable));
+  }
 
   public uploadChart(
     projectName: string,
@@ -201,18 +241,19 @@ export class HelmChartDefaultService extends HelmChartService {
     let formData = new FormData();
     let uploadURL = `${this.config.helmChartEndpoint}/${projectName}/charts`;
     if (chart) {
-      formData.append('chart', chart);
+      formData.append("chart", chart);
     }
     if (prov) {
-      formData.append('prov', prov);
+      formData.append("prov", prov);
       if (!chart) {
         uploadURL = `${this.config.helmChartEndpoint}/${projectName}/prov`;
       }
     }
-    return this.http.post(uploadURL, formData, {
-      responseType: ResponseContentType.Json
-    })
-    .pipe(map(response => this.extractData(response)))
-    .pipe(catchError(this.handleErrorObservable));
+    return this.http
+      .post(uploadURL, formData, {
+        responseType: ResponseContentType.Json
+      })
+      .pipe(map(response => this.extractData(response)))
+      .pipe(catchError(this.handleErrorObservable));
   }
 }

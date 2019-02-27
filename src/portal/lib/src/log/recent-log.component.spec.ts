@@ -31,7 +31,7 @@ describe('RecentLogComponent (inline template)', () => {
     data: []
   };
   let testConfig: IServiceConfig = {
-    logBaseEndpoint: "/api/logs/testing"
+    logBaseEndpoint: "/uai-harbor/api/logs/testing"
   };
 
   beforeEach(async(() => {
@@ -98,7 +98,7 @@ describe('RecentLogComponent (inline template)', () => {
 
   it('should inject the SERVICE_CONFIG', () => {
     expect(serviceConfig).toBeTruthy();
-    expect(serviceConfig.logBaseEndpoint).toEqual("/api/logs/testing");
+    expect(serviceConfig.logBaseEndpoint).toEqual("/uai-harbor/api/logs/testing");
   });
 
   it('should get data from AccessLogService', async(() => {

@@ -6,7 +6,7 @@ import { SERVICE_CONFIG, IServiceConfig } from '../service.config';
 
 describe('ScanningResultService', () => {
   const mockConfig: IServiceConfig = {
-    vulnerabilityScanningBaseEndpoint: "/api/vulnerability/testing"
+    vulnerabilityScanningBaseEndpoint: "/uai-harbor/api/vulnerability/testing"
   };
 
   let config: IServiceConfig;
@@ -36,6 +36,6 @@ describe('ScanningResultService', () => {
 
   it('should inject the right config', () => {
     expect(config).toBeTruthy();
-    expect(config.vulnerabilityScanningBaseEndpoint).toEqual("/api/vulnerability/testing");
+    expect(config.vulnerabilityScanningBaseEndpoint).toEqual("/uai-harbor/api/vulnerability/testing");
   });
 });

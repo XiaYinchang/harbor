@@ -11,14 +11,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Injectable } from "@angular/core";
+import { Http } from "@angular/http";
 
-
-import { SearchResults } from './search-results';
+import { SearchResults } from "./search-results";
 import { HTTP_GET_OPTIONS } from "../../shared/shared.utils";
 
-const searchEndpoint = "/api/search";
+const searchEndpoint = "/uai-harbor/api/search";
 /**
  * Declare service to handle the global search
  *
@@ -28,22 +27,23 @@ const searchEndpoint = "/api/search";
  */
 @Injectable()
 export class GlobalSearchService {
+  constructor(private http: Http) {}
 
-    constructor(private http: Http) { }
+  /**
+   * Search related artifacts with the provided keyword
+   *
+   *  ** deprecated param {string} keyword
+   * returns {Promise<SearchResults>}
+   *
+   * @memberOf GlobalSearchService
+   */
+  doSearch(term: string): Promise<SearchResults> {
+    let searchUrl = searchEndpoint + "?q=" + term;
 
-    /**
-     * Search related artifacts with the provided keyword
-     *
-     *  ** deprecated param {string} keyword
-     * returns {Promise<SearchResults>}
-     *
-     * @memberOf GlobalSearchService
-     */
-    doSearch(term: string): Promise<SearchResults> {
-        let searchUrl = searchEndpoint + "?q=" + term;
-
-        return this.http.get(searchUrl, HTTP_GET_OPTIONS).toPromise()
-            .then(response => response.json() as SearchResults)
-            .catch(error => Promise.reject(error));
-    }
+    return this.http
+      .get(searchUrl, HTTP_GET_OPTIONS)
+      .toPromise()
+      .then(response => response.json() as SearchResults)
+      .catch(error => Promise.reject(error));
+  }
 }

@@ -108,9 +108,9 @@ describe('RepositoryComponentGridview (inline template)', () => {
   // ];
 
   let config: IServiceConfig = {
-    repositoryBaseEndpoint: '/api/repository/testing',
-    systemInfoEndpoint: '/api/systeminfo/testing',
-    targetBaseEndpoint: '/api/tag/testing'
+    repositoryBaseEndpoint: '/uai-harbor/api/repository/testing',
+    systemInfoEndpoint: '/uai-harbor/api/systeminfo/testing',
+    targetBaseEndpoint: '/uai-harbor/api/tag/testing'
   };
 
   beforeEach(async(() => {

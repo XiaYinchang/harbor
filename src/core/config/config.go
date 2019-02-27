@@ -174,7 +174,12 @@ func AuthMode() (string, error) {
 	if err != nil {
 		log.Errorf("failed to load config, error %v", err)
 	}
-	return cfgMgr.Get(common.AUTHMode).GetString(), nil
+	authMode := cfgMgr.Get(common.AUTHMode).GetString()
+	envMode := os.Getenv("AUTH_MODE")
+	if envMode != "" {
+		authMode = envMode
+	}
+	return authMode, nil
 }
 
 // TokenPrivateKeyPath returns the path to the key for signing token for registry

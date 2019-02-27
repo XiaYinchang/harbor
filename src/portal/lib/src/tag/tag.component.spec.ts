@@ -98,7 +98,7 @@ describe("TagComponent (inline template)", () => {
   ];
 
   let config: IServiceConfig = {
-    repositoryBaseEndpoint: "/api/repositories/testing"
+    repositoryBaseEndpoint: "/uai-harbor/api/repositories/testing"
   };
   let mockHasAddLabelImagePermission: boolean = true;
   let mockHasRetagImagePermission: boolean = true;

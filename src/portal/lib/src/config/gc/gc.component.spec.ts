@@ -14,7 +14,7 @@ describe('GcComponent', () => {
   let fixture: ComponentFixture<GcComponent>;
   let gcRepoService: GcRepoService;
   let config: IServiceConfig = {
-    systemInfoEndpoint: "/api/system/gc"
+    systemInfoEndpoint: "/uai-harbor/api/system/gc"
   };
   let mockSchedule = [];
   let mockJobs = [

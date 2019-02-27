@@ -11,16 +11,15 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Injectable } from "@angular/core";
+import { Http } from "@angular/http";
 
+import { HTTP_JSON_OPTIONS, HTTP_GET_OPTIONS } from "../shared/shared.utils";
+import { User, LDAPUser } from "./user";
+import LDAPUsertoUser from "./user";
 
-import {HTTP_JSON_OPTIONS, HTTP_GET_OPTIONS} from "../shared/shared.utils";
-import { User, LDAPUser } from './user';
-import LDAPUsertoUser from './user';
-
-const userMgmtEndpoint = '/api/users';
-const ldapUserEndpoint = '/api/ldap/users';
+const userMgmtEndpoint = "/uai-harbor/api/users";
+const ldapUserEndpoint = "/uai-harbor/api/ldap/users";
 
 /**
  * Define related methods to handle account and session corresponding things
@@ -30,86 +29,113 @@ const ldapUserEndpoint = '/api/ldap/users';
  */
 @Injectable()
 export class UserService {
+  constructor(private http: Http) {}
 
-    constructor(private http: Http) { }
+  // Handle the related exceptions
+  handleError(error: any): Promise<any> {
+    return Promise.reject(error.message || error);
+  }
 
-    // Handle the related exceptions
-    handleError(error: any): Promise<any> {
-        return Promise.reject(error.message || error);
+  // Get the user list
+  getUsers(): Promise<User[]> {
+    return this.http
+      .get(userMgmtEndpoint, HTTP_GET_OPTIONS)
+      .toPromise()
+      .then(response => response.json() as User[])
+      .catch(error => this.handleError(error));
+  }
+
+  // Add new user
+  addUser(user: User): Promise<any> {
+    return this.http
+      .post(userMgmtEndpoint, JSON.stringify(user), HTTP_JSON_OPTIONS)
+      .toPromise()
+      .then(() => null)
+      .catch(error => this.handleError(error));
+  }
+
+  // Delete the specified user
+  deleteUser(userId: number): Promise<any> {
+    return this.http
+      .delete(userMgmtEndpoint + "/" + userId, HTTP_JSON_OPTIONS)
+      .toPromise()
+      .then(() => null)
+      .catch(error => this.handleError(error));
+  }
+
+  // Update user to enable/disable the admin role
+  updateUser(user: User): Promise<any> {
+    return this.http
+      .put(
+        userMgmtEndpoint + "/" + user.user_id,
+        JSON.stringify(user),
+        HTTP_JSON_OPTIONS
+      )
+      .toPromise()
+      .then(() => null)
+      .catch(error => this.handleError(error));
+  }
+
+  // Set user admin role
+  updateUserRole(user: User): Promise<any> {
+    return this.http
+      .put(
+        userMgmtEndpoint + "/" + user.user_id + "/sysadmin",
+        JSON.stringify(user),
+        HTTP_JSON_OPTIONS
+      )
+      .toPromise()
+      .then(() => null)
+      .catch(error => this.handleError(error));
+  }
+
+  // admin change normal user pwd
+  changePassword(
+    uid: number,
+    newPassword: string,
+    confirmPwd: string
+  ): Promise<any> {
+    if (!uid || !newPassword) {
+      return Promise.reject("Invalid change uid or password");
     }
 
-    // Get the user list
-    getUsers(): Promise<User[]> {
-        return this.http.get(userMgmtEndpoint, HTTP_GET_OPTIONS).toPromise()
-            .then(response => response.json() as User[])
-            .catch(error => this.handleError(error));
-    }
+    return this.http
+      .put(
+        userMgmtEndpoint + "/" + uid + "/password",
+        {
+          old_password: newPassword,
+          new_password: confirmPwd
+        },
+        HTTP_JSON_OPTIONS
+      )
+      .toPromise()
+      .then(response => response)
+      .catch(error => {
+        return Promise.reject(error);
+      });
+  }
 
-    // Add new user
-    addUser(user: User): Promise<any> {
-        return this.http.post(userMgmtEndpoint, JSON.stringify(user), HTTP_JSON_OPTIONS).toPromise()
-            .then(() => null)
-            .catch(error => this.handleError(error));
-    }
+  // Get User from LDAP
+  getLDAPUsers(username: string): Promise<User[]> {
+    return this.http
+      .get(`${ldapUserEndpoint}/search?username=${username}`, HTTP_GET_OPTIONS)
+      .toPromise()
+      .then(response => {
+        let ldapUser = (response.json() as LDAPUser[]) || [];
+        return ldapUser.map(u => LDAPUsertoUser(u));
+      })
+      .catch(error => this.handleError(error));
+  }
 
-    // Delete the specified user
-    deleteUser(userId: number): Promise<any> {
-        return this.http.delete(userMgmtEndpoint + "/" + userId, HTTP_JSON_OPTIONS)
-            .toPromise()
-            .then(() => null)
-            .catch(error => this.handleError(error));
-    }
-
-    // Update user to enable/disable the admin role
-    updateUser(user: User): Promise<any> {
-        return this.http.put(userMgmtEndpoint + "/" + user.user_id, JSON.stringify(user), HTTP_JSON_OPTIONS)
-            .toPromise()
-            .then(() => null)
-            .catch(error => this.handleError(error));
-    }
-
-    // Set user admin role
-    updateUserRole(user: User): Promise<any> {
-        return this.http.put(userMgmtEndpoint + "/" + user.user_id + "/sysadmin", JSON.stringify(user), HTTP_JSON_OPTIONS)
-            .toPromise()
-            .then(() => null)
-            .catch(error => this.handleError(error));
-    }
-
-    // admin change normal user pwd
-    changePassword(uid: number, newPassword: string, confirmPwd: string): Promise<any> {
-        if (!uid || !newPassword) {
-            return Promise.reject("Invalid change uid or password");
-        }
-
-        return this.http.put(userMgmtEndpoint + '/' + uid + '/password',
-            {
-                "old_password": newPassword,
-                'new_password': confirmPwd
-            },
-            HTTP_JSON_OPTIONS)
-            .toPromise()
-            .then(response => response)
-            .catch(error => {
-                return Promise.reject(error);
-            });
-    }
-
-    // Get User from LDAP
-    getLDAPUsers(username: string): Promise<User[]> {
-        return this.http.get(`${ldapUserEndpoint}/search?username=${username}`, HTTP_GET_OPTIONS)
-        .toPromise()
-        .then(response => {
-            let ldapUser = response.json() as LDAPUser[] || [];
-            return ldapUser.map(u => LDAPUsertoUser(u));
-        })
-        .catch( error => this.handleError(error));
-    }
-
-    importLDAPUsers(usernames: string[]): Promise<any> {
-        return this.http.post(`${ldapUserEndpoint}/import`, JSON.stringify({ldap_uid_list: usernames}), HTTP_JSON_OPTIONS)
-        .toPromise()
-        .then(() => null )
-        .catch(err => this.handleError(err));
-    }
+  importLDAPUsers(usernames: string[]): Promise<any> {
+    return this.http
+      .post(
+        `${ldapUserEndpoint}/import`,
+        JSON.stringify({ ldap_uid_list: usernames }),
+        HTTP_JSON_OPTIONS
+      )
+      .toPromise()
+      .then(() => null)
+      .catch(err => this.handleError(err));
+  }
 }

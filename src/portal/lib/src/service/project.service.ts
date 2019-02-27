@@ -94,7 +94,7 @@ export class ProjectDefaultService extends ProjectService {
     }
     let baseUrl: string = this.config.projectBaseEndpoint
       ? this.config.projectBaseEndpoint
-      : "/api/projects";
+      : "/uai-harbor/api/projects";
     return this.http
       .get(`${baseUrl}/${projectId}`, HTTP_GET_OPTIONS)
       .pipe(map(response => response.json()))
@@ -109,7 +109,7 @@ export class ProjectDefaultService extends ProjectService {
   ): Observable<Project[]> | Promise<Project[]> | Project[] {
     let baseUrl: string = this.config.projectBaseEndpoint
       ? this.config.projectBaseEndpoint
-      : "/api/projects";
+      : "/uai-harbor/api/projects";
     let params = new RequestQueryParams();
     if (page && pageSize) {
       params.set("page", page + "");
@@ -135,7 +135,7 @@ export class ProjectDefaultService extends ProjectService {
   ): any {
     let baseUrl: string = this.config.projectBaseEndpoint
       ? this.config.projectBaseEndpoint
-      : "/api/projects";
+      : "/uai-harbor/api/projects";
     return this.http
       .put(
         `${baseUrl}/${projectId}`,

@@ -53,7 +53,7 @@ export class ConfigurationDefaultService extends ConfigurationService {
     this._baseUrl =
       this.config && this.config.configurationEndpoint
         ? this.config.configurationEndpoint
-        : "/api/configurations";
+        : "/uai-harbor/api/configurations";
   }
 
   getConfigurations():

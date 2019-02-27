@@ -43,7 +43,7 @@ export class RetagDefaultService extends RetagService {
 
     retag(request: RetagRequest): Observable<any> {
         return this.http
-            .post(`/api/repositories/${request.targetProject}/${request.targetRepo}/tags`,
+            .post(`/uai-harbor/api/repositories/${request.targetProject}/${request.targetRepo}/tags`,
                 {
                     "tag": request.targetTag,
                     "src_image": request.srcImage,

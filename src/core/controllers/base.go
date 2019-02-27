@@ -69,6 +69,9 @@ func (cc *CommonController) Login() {
 	if user == nil {
 		cc.CustomAbort(http.StatusUnauthorized, "")
 	}
+	if(user.Token != "") {
+		cc.Ctx.Output.Header("keystone-token" , user.Token)
+	}
 	cc.SetSession("user", *user)
 }
 

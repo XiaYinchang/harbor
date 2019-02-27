@@ -11,14 +11,14 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import { Injectable } from '@angular/core';
-import { Http, URLSearchParams } from '@angular/http';
-import 'rxjs/add/operator/toPromise';
+import { Injectable } from "@angular/core";
+import { Http, URLSearchParams } from "@angular/http";
+import "rxjs/add/operator/toPromise";
 
-import { SignInCredential } from '../../shared/sign-in-credential';
-import {HTTP_FORM_OPTIONS} from "../../shared/shared.utils";
+import { SignInCredential } from "../../shared/sign-in-credential";
+import { HTTP_FORM_OPTIONS } from "../../shared/shared.utils";
 
-const signInUrl = '/c/login';
+const signInUrl = "/uai-harbor/c/login";
 /**
  *
  * Define a service to provide sign in methods
@@ -28,25 +28,25 @@ const signInUrl = '/c/login';
  */
 @Injectable()
 export class SignInService {
+  constructor(private http: Http) {}
 
-    constructor(private http: Http) {}
+  // Handle the related exceptions
+  handleError(error: any): Promise<any> {
+    return Promise.reject(error.message || error);
+  }
 
-    // Handle the related exceptions
-    handleError(error: any): Promise<any> {
-        return Promise.reject(error.message || error);
-    }
+  // Submit signin form to backend (NOT restful service)
+  signIn(signInCredential: SignInCredential): Promise<any> {
+    // Build the form package
+    const body = new URLSearchParams();
+    body.set("principal", signInCredential.principal);
+    body.set("password", signInCredential.password);
 
-    // Submit signin form to backend (NOT restful service)
-    signIn(signInCredential: SignInCredential): Promise<any> {
-        // Build the form package
-        const body = new URLSearchParams();
-        body.set('principal', signInCredential.principal);
-        body.set('password', signInCredential.password);
-
-        // Trigger Http
-        return this.http.post(signInUrl, body.toString(), HTTP_FORM_OPTIONS)
-        .toPromise()
-        .then(() => null)
-        .catch(this.handleError);
-    }
+    // Trigger Http
+    return this.http
+      .post(signInUrl, body.toString(), HTTP_FORM_OPTIONS)
+      .toPromise()
+      .then(() => null)
+      .catch(this.handleError);
+  }
 }

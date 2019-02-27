@@ -22,7 +22,7 @@ describe('TagService', () => {
   // ];
 
   const mockConfig: IServiceConfig = {
-    repositoryBaseEndpoint: "/api/repositories/testing"
+    repositoryBaseEndpoint: "/uai-harbor/api/repositories/testing"
   };
 
   beforeEach(() => {

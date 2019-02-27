@@ -85,7 +85,7 @@ describe("TagDetailComponent (inline template)", () => {
   };
 
   let config: IServiceConfig = {
-    repositoryBaseEndpoint: "/api/repositories/testing"
+    repositoryBaseEndpoint: "/uai-harbor/api/repositories/testing"
   };
   let mockHasVulnerabilitiesListPermission: boolean = false;
   let mockHasBuildHistoryPermission: boolean = true;

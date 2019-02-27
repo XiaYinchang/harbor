@@ -226,8 +226,8 @@ describe("CreateEditRuleComponent (inline template)", () => {
   let spyEndpoint: jasmine.Spy;
 
   let config: IServiceConfig = {
-    replicationJobEndpoint: "/api/jobs/replication/testing",
-    targetBaseEndpoint: "/api/targets/testing"
+    replicationJobEndpoint: "/uai-harbor/api/jobs/replication/testing",
+    targetBaseEndpoint: "/uai-harbor/api/targets/testing"
   };
 
   beforeEach(async(() => {

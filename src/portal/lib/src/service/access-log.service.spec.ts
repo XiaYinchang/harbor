@@ -6,7 +6,7 @@ import { SERVICE_CONFIG, IServiceConfig } from '../service.config';
 
 describe('AccessLogService', () => {
   const mockConfig: IServiceConfig = {
-    logBaseEndpoint: "/api/logs/testing"
+    logBaseEndpoint: "/uai-harbor/api/logs/testing"
   };
 
   let config: IServiceConfig;
@@ -36,7 +36,7 @@ describe('AccessLogService', () => {
 
   it('should inject the right config', () => {
     expect(config).toBeTruthy();
-    expect(config.logBaseEndpoint).toEqual("/api/logs/testing");
+    expect(config.logBaseEndpoint).toEqual("/uai-harbor/api/logs/testing");
   });
 
 });

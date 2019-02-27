@@ -1,7 +1,6 @@
+import { throwError as observableThrowError, Observable } from "rxjs";
 
-import {throwError as observableThrowError,  Observable } from "rxjs";
-
-import {map, catchError} from 'rxjs/operators';
+import { map, catchError } from "rxjs/operators";
 // Copyright (c) 2017 VMware, Inc. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,51 +14,54 @@ import {map, catchError} from 'rxjs/operators';
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import { Injectable } from '@angular/core';
-import { Http, URLSearchParams } from '@angular/http';
+import { Injectable } from "@angular/core";
+import { Http, URLSearchParams } from "@angular/http";
 
-import { AuditLog } from './audit-log';
+import { AuditLog } from "./audit-log";
 
+import { buildHttpRequestOptions } from "../shared/shared.utils";
+import { RequestQueryParams } from "@harbor/ui";
 
-
-import {buildHttpRequestOptions} from '../shared/shared.utils';
-import {RequestQueryParams} from '@harbor/ui';
-
-export const logEndpoint = '/api/logs';
+export const logEndpoint = "/uai-harbor/api/logs";
 
 @Injectable()
 export class AuditLogService {
-
   constructor(private http: Http) {}
 
   listAuditLogs(queryParam: AuditLog): Observable<any> {
     let params: URLSearchParams = new URLSearchParams(queryParam.keywords);
     if (queryParam.begin_timestamp) {
-      params.set('begin_timestamp', <string>queryParam.begin_timestamp);
+      params.set("begin_timestamp", <string>queryParam.begin_timestamp);
     }
     if (queryParam.end_timestamp) {
-      params.set('end_timestamp', <string>queryParam.end_timestamp);
+      params.set("end_timestamp", <string>queryParam.end_timestamp);
     }
     if (queryParam.username) {
-      params.set('username', queryParam.username);
+      params.set("username", queryParam.username);
     }
     if (queryParam.page) {
-      params.set('page', <string>queryParam.page);
+      params.set("page", <string>queryParam.page);
     }
     if (queryParam.page_size) {
-      params.set('page_size', <string>queryParam.page_size);
+      params.set("page_size", <string>queryParam.page_size);
     }
     return this.http
-      .get(`/api/projects/${queryParam.project_id}/logs`, buildHttpRequestOptions(params)).pipe(
-      map(response => response),
-      catchError(error => observableThrowError(error)), );
+      .get(
+        `/uai-harbor/api/projects/${queryParam.project_id}/logs`,
+        buildHttpRequestOptions(params)
+      )
+      .pipe(
+        map(response => response),
+        catchError(error => observableThrowError(error))
+      );
   }
 
   getRecentLogs(lines: number): Observable<AuditLog[]> {
     let params: RequestQueryParams = new RequestQueryParams();
-    params.set('page_size', '' + lines);
-    return this.http.get(logEndpoint,  buildHttpRequestOptions(params)).pipe(
+    params.set("page_size", "" + lines);
+    return this.http.get(logEndpoint, buildHttpRequestOptions(params)).pipe(
       map(response => response.json() as AuditLog[]),
-      catchError(error => observableThrowError(error)), );
+      catchError(error => observableThrowError(error))
+    );
   }
 }

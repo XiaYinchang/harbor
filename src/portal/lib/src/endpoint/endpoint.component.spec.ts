@@ -75,7 +75,7 @@ describe("EndpointComponent (inline template)", () => {
   let comp: EndpointComponent;
   let fixture: ComponentFixture<EndpointComponent>;
   let config: IServiceConfig = {
-    systemInfoEndpoint: "/api/endpoints/testing"
+    systemInfoEndpoint: "/uai-harbor/api/endpoints/testing"
   };
 
   let endpointService: EndpointService;
@@ -127,7 +127,7 @@ describe("EndpointComponent (inline template)", () => {
 
   it("should endpoint be initialized", () => {
     fixture.detectChanges();
-    expect(config.systemInfoEndpoint).toEqual("/api/endpoints/testing");
+    expect(config.systemInfoEndpoint).toEqual("/uai-harbor/api/endpoints/testing");
   });
 
   it("should open create endpoint modal", async(() => {

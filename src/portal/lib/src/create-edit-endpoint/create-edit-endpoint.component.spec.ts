@@ -33,7 +33,7 @@ describe("CreateEditEndpointComponent (inline template)", () => {
   let fixture: ComponentFixture<CreateEditEndpointComponent>;
 
   let config: IServiceConfig = {
-    systemInfoEndpoint: "/api/endpoints/testing"
+    systemInfoEndpoint: "/uai-harbor/api/endpoints/testing"
   };
 
   let endpointService: EndpointService;
@@ -93,6 +93,6 @@ describe("CreateEditEndpointComponent (inline template)", () => {
 
   it("should endpoint be initialized", () => {
     fixture.detectChanges();
-    expect(config.systemInfoEndpoint).toEqual("/api/endpoints/testing");
+    expect(config.systemInfoEndpoint).toEqual("/uai-harbor/api/endpoints/testing");
   });
 });

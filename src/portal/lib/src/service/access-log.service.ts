@@ -76,7 +76,7 @@ export class AccessLogDefaultService extends AccessLogService {
       ? this.config.logBaseEndpoint
       : "";
     if (url === "") {
-      url = "/api/logs";
+      url = "/uai-harbor/api/logs";
     }
 
     return this.http

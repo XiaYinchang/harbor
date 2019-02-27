@@ -8,7 +8,7 @@ import { EndpointService, EndpointDefaultService } from './endpoint.service';
 describe('EndpointService', () => {
 
   let mockEndpoint: IServiceConfig = {
-    targetBaseEndpoint: '/api/endpoint/testing'
+    targetBaseEndpoint: '/uai-harbor/api/endpoint/testing'
   };
 
   beforeEach(() => {

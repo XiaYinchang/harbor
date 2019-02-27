@@ -190,13 +190,13 @@ export class ReplicationDefaultService extends ReplicationService {
     super();
     this._ruleBaseUrl = config.replicationRuleEndpoint
       ? config.replicationRuleEndpoint
-      : "/api/policies/replication";
+      : "/uai-harbor/api/policies/replication";
     this._jobBaseUrl = config.replicationJobEndpoint
       ? config.replicationJobEndpoint
-      : "/api/jobs/replication";
+      : "/uai-harbor/api/jobs/replication";
     this._replicateUrl = config.replicationBaseEndpoint
       ? config.replicationBaseEndpoint
-      : "/api/replications";
+      : "/uai-harbor/api/replications";
   }
 
   // Private methods

@@ -39,7 +39,7 @@ export class LabelDefaultService extends LabelService {
     super();
     this._labelUrl = config.labelEndpoint
       ? config.labelEndpoint
-      : "/api/labels";
+      : "/uai-harbor/api/labels";
   }
 
   getLabels(

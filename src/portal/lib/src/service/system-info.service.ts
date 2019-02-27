@@ -26,7 +26,7 @@ export class SystemInfoDefaultService extends SystemInfoService {
     super();
   }
   getSystemInfo(): Observable<SystemInfo> | Promise<SystemInfo> | SystemInfo {
-    let url = this.config.systemInfoEndpoint ? this.config.systemInfoEndpoint : '/api/systeminfo';
+    let url = this.config.systemInfoEndpoint ? this.config.systemInfoEndpoint : '/uai-harbor/api/systeminfo';
     return this.http.get(url, HTTP_GET_OPTIONS)
       .toPromise()
       .then(systemInfo => systemInfo.json() as SystemInfo)

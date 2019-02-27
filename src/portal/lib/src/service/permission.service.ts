@@ -47,8 +47,12 @@ export class UserPermissionDefaultService extends UserPermissionService {
     private permissionCache: Observable<object>;
     private projectId: number;
     private getPermissionFromBackend(projectId): Observable<object> {
-        const userPermissionUrl = `/api/users/current/permissions?scope=/project/${projectId}&relative=true`;
-        return this.http.get(userPermissionUrl);
+        const userPermissionUrl = `/uai-harbor/api/users/current/permissions?scope=/project/${projectId}&relative=true`;
+        return this.http.get(userPermissionUrl, {
+            headers: {
+                "X-Auth-Token": localStorage.getItem('token')
+            }
+        });
     }
     private processingPermissionResult(responsePermission, resource, action): boolean {
         const permissionList = responsePermission as UserPrivilegeServeItem[];

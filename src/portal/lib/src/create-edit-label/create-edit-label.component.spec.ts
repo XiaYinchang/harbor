@@ -26,7 +26,7 @@ describe("CreateEditLabelComponent (inline template)", () => {
   let fixture: ComponentFixture<CreateEditLabelComponent>;
 
   let config: IServiceConfig = {
-    systemInfoEndpoint: "/api/label/testing"
+    systemInfoEndpoint: "/uai-harbor/api/label/testing"
   };
 
   let labelService: LabelService;

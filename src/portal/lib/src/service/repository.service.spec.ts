@@ -6,7 +6,7 @@ import { SERVICE_CONFIG, IServiceConfig } from '../service.config';
 
 describe('RepositoryService', () => {
   const mockConfig: IServiceConfig = {
-    repositoryBaseEndpoint: "/api/repositories/testing"
+    repositoryBaseEndpoint: "/uai-harbor/api/repositories/testing"
   };
 
   let config: IServiceConfig;
@@ -36,7 +36,7 @@ describe('RepositoryService', () => {
 
   it('should inject the right config', () => {
     expect(config).toBeTruthy();
-    expect(config.repositoryBaseEndpoint).toEqual("/api/repositories/testing");
+    expect(config.repositoryBaseEndpoint).toEqual("/uai-harbor/api/repositories/testing");
   });
 
 });

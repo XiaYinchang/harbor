@@ -11,14 +11,14 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Injectable } from "@angular/core";
+import { Http } from "@angular/http";
 
-import { Repository } from '@harbor/ui';
+import { Repository } from "@harbor/ui";
 
-import {HTTP_GET_OPTIONS} from "../../shared/shared.utils";
+import { HTTP_GET_OPTIONS } from "../../shared/shared.utils";
 
-export const topRepoEndpoint = "/api/repositories/top";
+export const topRepoEndpoint = "/uai-harbor/api/repositories/top";
 /**
  * Declare service to handle the top repositories
  *
@@ -28,20 +28,21 @@ export const topRepoEndpoint = "/api/repositories/top";
  */
 @Injectable()
 export class TopRepoService {
+  constructor(private http: Http) {}
 
-    constructor(private http: Http) { }
-
-    /**
-     * Get top popular repositories
-     *
-     *  ** deprecated param {string} keyword
-     * returns {Promise<TopRepo>}
-     *
-     * @memberOf GlobalSearchService
-     */
-    getTopRepos(): Promise<Repository[]> {
-        return this.http.get(topRepoEndpoint, HTTP_GET_OPTIONS).toPromise()
-            .then(response => response.json() as Repository[])
-            .catch(error => Promise.reject(error));
-    }
+  /**
+   * Get top popular repositories
+   *
+   *  ** deprecated param {string} keyword
+   * returns {Promise<TopRepo>}
+   *
+   * @memberOf GlobalSearchService
+   */
+  getTopRepos(): Promise<Repository[]> {
+    return this.http
+      .get(topRepoEndpoint, HTTP_GET_OPTIONS)
+      .toPromise()
+      .then(response => response.json() as Repository[])
+      .catch(error => Promise.reject(error));
+  }
 }

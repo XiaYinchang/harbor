@@ -17,7 +17,6 @@ package auth
 import (
 	"errors"
 	"fmt"
-	"os"
 	"time"
 
 	"github.com/XiaYinchang/harbor/src/common"
@@ -131,10 +130,6 @@ func Login(m models.AuthModel) (*models.User, error) {
 	authMode, err := config.AuthMode()
 	if err != nil {
 		return nil, err
-	}
-	envMode := os.Getenv("AUTH_MODE")
-	if envMode != "" {
-		authMode = envMode
 	}
 	if authMode == "" {
 		authMode = common.DBAuth

@@ -74,6 +74,7 @@ func (d *Auth) Authenticate(m models.AuthModel) (*models.User, error) {
 	if err != nil {
 		return nil, err
 	}
+	detailedUserInfo.Token = client.AuthInfo.Token
 	return detailedUserInfo, nil
 }
 

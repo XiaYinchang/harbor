@@ -59,7 +59,7 @@ describe('LabelComponent (inline template)', () => {
     let spyOneLabel: jasmine.Spy;
 
     let config: IServiceConfig = {
-        systemInfoEndpoint: '/api/label/testing'
+        systemInfoEndpoint: '/uai-harbor/api/label/testing'
     };
 
     beforeEach(async(() => {

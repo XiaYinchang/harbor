@@ -109,7 +109,7 @@ describe('ListReplicationRuleComponent (inline template)', () => {
   let spyRules: jasmine.Spy;
 
   let config: IServiceConfig = {
-    replicationRuleEndpoint: '/api/policies/replication/testing'
+    replicationRuleEndpoint: '/uai-harbor/api/policies/replication/testing'
   };
 
   beforeEach(async(() => {

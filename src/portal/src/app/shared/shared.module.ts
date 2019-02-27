@@ -14,7 +14,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { TranslateModule } from "@ngx-translate/core";
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CookieService } from "ngx-cookie";
 import {
   IServiceConfig,
@@ -51,7 +51,7 @@ import { GaugeComponent } from "./gauge/gauge.component";
 import { ConfirmationDialogComponent } from "./confirmation-dialog/confirmation-dialog.component";
 import { ConfirmationDialogService } from "./confirmation-dialog/confirmation-dialog.service";
 import { MessageHandlerService } from "./message-handler/message-handler.service";
-import { ListChartVersionRoComponent } from './list-chart-version-ro/list-chart-version-ro.component';
+import { ListChartVersionRoComponent } from "./list-chart-version-ro/list-chart-version-ro.component";
 
 const uiLibConfig: IServiceConfig = {
   enablei18Support: true,
@@ -59,23 +59,23 @@ const uiLibConfig: IServiceConfig = {
   langMessageLoader: "http",
   langMessagePathForHttpLoader: "i18n/lang/",
   langMessageFileSuffixForHttpLoader: "-lang.json",
-  systemInfoEndpoint: "/api/systeminfo",
-  repositoryBaseEndpoint: "/api/repositories",
-  logBaseEndpoint: "/api/logs",
-  targetBaseEndpoint: "/api/targets",
-  replicationBaseEndpoint: "/api/replications",
-  replicationRuleEndpoint: "/api/policies/replication",
-  replicationJobEndpoint: "/api/jobs/replication",
-  vulnerabilityScanningBaseEndpoint: "/api/repositories",
-  projectPolicyEndpoint: "/api/projects/configs",
-  projectBaseEndpoint: "/api/projects",
+  systemInfoEndpoint: "/uai-harbor/api/systeminfo",
+  repositoryBaseEndpoint: "/uai-harbor/api/repositories",
+  logBaseEndpoint: "/uai-harbor/api/logs",
+  targetBaseEndpoint: "/uai-harbor/api/targets",
+  replicationBaseEndpoint: "/uai-harbor/api/replications",
+  replicationRuleEndpoint: "/uai-harbor/api/policies/replication",
+  replicationJobEndpoint: "/uai-harbor/api/jobs/replication",
+  vulnerabilityScanningBaseEndpoint: "/uai-harbor/api/repositories",
+  projectPolicyEndpoint: "/uai-harbor/api/projects/configs",
+  projectBaseEndpoint: "/uai-harbor/api/projects",
   localI18nMessageVariableMap: {},
-  configurationEndpoint: "/api/configurations",
-  scanJobEndpoint: "/api/jobs/scan",
-  labelEndpoint: "/api/labels",
-  helmChartEndpoint: "/api/chartrepo",
-  downloadChartEndpoint: "/chartrepo",
-  gcEndpoint: "/api/system/gc"
+  configurationEndpoint: "/uai-harbor/api/configurations",
+  scanJobEndpoint: "/uai-harbor/api/jobs/scan",
+  labelEndpoint: "/uai-harbor/api/labels",
+  helmChartEndpoint: "/uai-harbor/api/chartrepo",
+  downloadChartEndpoint: "/uai-harbor/chartrepo",
+  gcEndpoint: "/uai-harbor/api/system/gc"
 };
 
 @NgModule({

@@ -89,7 +89,7 @@ export class RepositoryDefaultService extends RepositoryService {
             queryParams.set('q', repositoryName);
         }
 
-        let url: string = this.config.repositoryBaseEndpoint ? this.config.repositoryBaseEndpoint : '/api/repositories';
+        let url: string = this.config.repositoryBaseEndpoint ? this.config.repositoryBaseEndpoint : '/uai-harbor/api/repositories';
         return this.http.get(url, buildHttpRequestOptions(queryParams)).toPromise()
             .then(response => {
                 let result: Repository = {
@@ -124,7 +124,7 @@ export class RepositoryDefaultService extends RepositoryService {
             queryParams = new RequestQueryParams();
         }
 
-        let baseUrl: string = this.config.repositoryBaseEndpoint ? this.config.repositoryBaseEndpoint : '/api/repositories';
+        let baseUrl: string = this.config.repositoryBaseEndpoint ? this.config.repositoryBaseEndpoint : '/uai-harbor/api/repositories';
         let url = `${baseUrl}/${repositoryName}`;
         return this.http.put(url, {'description': description }, HTTP_JSON_OPTIONS).toPromise()
         .then(response => response)
@@ -135,7 +135,7 @@ export class RepositoryDefaultService extends RepositoryService {
         if (!repositoryName) {
             return Promise.reject('Bad argument');
         }
-        let url: string = this.config.repositoryBaseEndpoint ? this.config.repositoryBaseEndpoint : '/api/repositories';
+        let url: string = this.config.repositoryBaseEndpoint ? this.config.repositoryBaseEndpoint : '/uai-harbor/api/repositories';
         url = `${url}/${repositoryName}`;
 
         return this.http.delete(url, HTTP_JSON_OPTIONS).toPromise()

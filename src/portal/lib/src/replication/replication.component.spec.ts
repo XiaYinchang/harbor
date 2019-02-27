@@ -207,8 +207,8 @@ describe('Replication Component (inline template)', () => {
   let elJob: HTMLElement;
 
   let config: IServiceConfig = {
-    replicationRuleEndpoint: '/api/policies/replication/testing',
-    replicationJobEndpoint: '/api/jobs/replication/testing'
+    replicationRuleEndpoint: '/uai-harbor/api/policies/replication/testing',
+    replicationJobEndpoint: '/uai-harbor/api/jobs/replication/testing'
   };
 
   beforeEach(async(() => {

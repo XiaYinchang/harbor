@@ -11,47 +11,50 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Injectable } from "@angular/core";
+import { Http } from "@angular/http";
 
+import { Configuration } from "@harbor/ui";
 
-import { Configuration } from '@harbor/ui';
+import { HTTP_GET_OPTIONS, HTTP_JSON_OPTIONS } from "../shared/shared.utils";
 
-import {HTTP_GET_OPTIONS, HTTP_JSON_OPTIONS} from "../shared/shared.utils";
-
-const configEndpoint = "/api/configurations";
-const emailEndpoint = "/api/email/ping";
-const ldapEndpoint = "/api/ldap/ping";
+const configEndpoint = "/uai-harbor/api/configurations";
+const emailEndpoint = "/uai-harbor/api/email/ping";
+const ldapEndpoint = "/uai-harbor/api/ldap/ping";
 
 @Injectable()
 export class ConfigurationService {
+  constructor(private http: Http) {}
 
-    constructor(private http: Http) { }
+  public getConfiguration(): Promise<Configuration> {
+    return this.http
+      .get(configEndpoint, HTTP_GET_OPTIONS)
+      .toPromise()
+      .then(response => response.json() as Configuration)
+      .catch(error => Promise.reject(error));
+  }
 
-    public getConfiguration(): Promise<Configuration> {
-        return this.http.get(configEndpoint, HTTP_GET_OPTIONS).toPromise()
-        .then(response => response.json() as Configuration)
-        .catch(error => Promise.reject(error));
-    }
+  public saveConfiguration(values: any): Promise<any> {
+    return this.http
+      .put(configEndpoint, JSON.stringify(values), HTTP_JSON_OPTIONS)
+      .toPromise()
+      .then(response => response)
+      .catch(error => Promise.reject(error));
+  }
 
-    public saveConfiguration(values: any): Promise<any> {
-        return this.http.put(configEndpoint, JSON.stringify(values), HTTP_JSON_OPTIONS)
-        .toPromise()
-        .then(response => response)
-        .catch(error => Promise.reject(error));
-    }
+  public testMailServer(mailSettings: any): Promise<any> {
+    return this.http
+      .post(emailEndpoint, JSON.stringify(mailSettings), HTTP_JSON_OPTIONS)
+      .toPromise()
+      .then(response => response)
+      .catch(error => Promise.reject(error));
+  }
 
-    public testMailServer(mailSettings: any): Promise<any> {
-        return this.http.post(emailEndpoint, JSON.stringify(mailSettings), HTTP_JSON_OPTIONS)
-        .toPromise()
-        .then(response => response)
-        .catch(error => Promise.reject(error));
-    }
-
-    public testLDAPServer(ldapSettings: any): Promise<any> {
-         return this.http.post(ldapEndpoint, JSON.stringify(ldapSettings), HTTP_JSON_OPTIONS)
-        .toPromise()
-        .then(response => response)
-        .catch(error => Promise.reject(error));
-    }
+  public testLDAPServer(ldapSettings: any): Promise<any> {
+    return this.http
+      .post(ldapEndpoint, JSON.stringify(ldapSettings), HTTP_JSON_OPTIONS)
+      .toPromise()
+      .then(response => response)
+      .catch(error => Promise.reject(error));
+  }
 }

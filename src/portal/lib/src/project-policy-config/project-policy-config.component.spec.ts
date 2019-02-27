@@ -89,8 +89,8 @@ describe('ProjectPolicyConfigComponent', () => {
   let fixture: ComponentFixture<ProjectPolicyConfigComponent>;
 
   let config: IServiceConfig = {
-    projectPolicyEndpoint: '/api/projects/testing',
-    systemInfoEndpoint: '/api/systeminfo/testing',
+    projectPolicyEndpoint: '/uai-harbor/api/projects/testing',
+    systemInfoEndpoint: '/uai-harbor/api/systeminfo/testing',
   };
 
   beforeEach(async(() => {

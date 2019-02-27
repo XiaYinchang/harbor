@@ -18,9 +18,9 @@ export interface IServiceConfig {
      * The base endpoint of the service used to handle the repositories of registry and/or tags of repository.
      * The endpoints of repository or tag(s) will be built based on this endpoint.
      * E.g:
-     *   If the base endpoint is '/api/repositories',
-     *   the repository endpoint will be '/api/repositories/:repo_id',
-     *   the tag(s) endpoint will be '/api/repositories/:repo_id/tags[/:tag_id]'.
+     *   If the base endpoint is '/uai-harbor/api/repositories',
+     *   the repository endpoint will be '/uai-harbor/api/repositories/:repo_id',
+     *   the tag(s) endpoint will be '/uai-harbor/api/repositories/:repo_id/tags[/:tag_id]'.
      *
      *
      * * {string}
@@ -40,9 +40,9 @@ export interface IServiceConfig {
      * The base endpoint of the service used to handle the registry targets.
      * Registry target related endpoints will be built based on this endpoint.
      * E.g:
-     *   If the base endpoint is '/api/endpoints',
-     *   the endpoint for registry target will be '/api/endpoints/:endpoint_id',
-     *   the endpoint for pinging registry target will be '/api/endpoints/:endpoint_id/ping'.
+     *   If the base endpoint is '/uai-harbor/api/endpoints',
+     *   the endpoint for registry target will be '/uai-harbor/api/endpoints/:endpoint_id',
+     *   the endpoint for pinging registry target will be '/uai-harbor/api/endpoints/:endpoint_id/ping'.
      *
      * * {string}
      * @memberOf IServiceConfig
@@ -58,8 +58,8 @@ export interface IServiceConfig {
      * The base endpoint of the service used to handle the replication rules.
      * Replication rule related endpoints will be built based on this endpoint.
      * E.g:
-     *   If the base endpoint is '/api/replication/rules',
-     *   the endpoint for rule will be '/api/replication/rules/:rule_id'.
+     *   If the base endpoint is '/uai-harbor/api/replication/rules',
+     *   the endpoint for rule will be '/uai-harbor/api/replication/rules/:rule_id'.
      *
      * * {string}
      * @memberOf IServiceConfig
@@ -212,8 +212,8 @@ export interface IServiceConfig {
      * The base endpoint of the service used to handle the labels.
      * labels related endpoints will be built based on this endpoint.
      * E.g:
-     *   If the base endpoint is '/api/labels',
-     *   the label endpoint  will be '/api/labels/:id'.
+     *   If the base endpoint is '/uai-harbor/api/labels',
+     *   the label endpoint  will be '/uai-harbor/api/labels/:id'.
      *
      * * {string}
      * @memberOf IServiceConfig
@@ -224,8 +224,8 @@ export interface IServiceConfig {
      * The base endpoint of the service used to handle the helm chart.
      * helm charts related endpoints will be built based on this endpoint.
      * E.g:
-     *   If the base endpoint is '/api/helmcharts',
-     *   the helm chart endpoint  will be '/api/helmcharts/:id'.
+     *   If the base endpoint is '/uai-harbor/api/helmcharts',
+     *   the helm chart endpoint  will be '/uai-harbor/api/helmcharts/:id'.
      *
      * * {string}
      * @memberOf IServiceConfig

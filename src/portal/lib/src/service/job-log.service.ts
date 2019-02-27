@@ -49,10 +49,10 @@ export class JobLogDefaultService extends JobLogService {
     super();
     this._replicationJobBaseUrl = config.replicationJobEndpoint
       ? config.replicationJobEndpoint
-      : "/api/jobs/replication";
+      : "/uai-harbor/api/jobs/replication";
     this._scanningJobBaseUrl = config.scanJobEndpoint
       ? config.scanJobEndpoint
-      : "/api/jobs/scan";
+      : "/uai-harbor/api/jobs/scan";
     this._supportedJobTypes = ["replication", "scan"];
   }
 

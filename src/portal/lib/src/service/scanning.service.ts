@@ -79,7 +79,7 @@ export abstract class ScanningResultService {
 
 @Injectable()
 export class ScanningResultDefaultService extends ScanningResultService {
-  _baseUrl: string = "/api/repositories";
+  _baseUrl: string = "/uai-harbor/api/repositories";
 
   constructor(
     private http: Http,

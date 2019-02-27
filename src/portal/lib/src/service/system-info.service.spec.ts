@@ -6,7 +6,7 @@ import { SERVICE_CONFIG, IServiceConfig } from '../service.config';
 
 describe('SystemInfoService', () => {
   const mockConfig: IServiceConfig = {
-    systemInfoEndpoint: "/api/systeminfo/testing"
+    systemInfoEndpoint: "/uai-harbor/api/systeminfo/testing"
   };
 
   let config: IServiceConfig;
@@ -36,6 +36,6 @@ describe('SystemInfoService', () => {
 
   it('should inject the right config', () => {
     expect(config).toBeTruthy();
-    expect(config.systemInfoEndpoint).toEqual("/api/systeminfo/testing");
+    expect(config.systemInfoEndpoint).toEqual("/uai-harbor/api/systeminfo/testing");
   });
 });

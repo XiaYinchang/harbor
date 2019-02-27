@@ -79,8 +79,8 @@ export class LabelDefaultService extends LabelService {
     private http: Http
   ) {
     super();
-    this.labelUrl = config.labelEndpoint ? config.labelEndpoint : "/api/labels";
-    this.chartUrl =  config.helmChartEndpoint ? config.helmChartEndpoint : "/api/chartrepo";
+    this.labelUrl = config.labelEndpoint ? config.labelEndpoint : "/uai-harbor/api/labels";
+    this.chartUrl =  config.helmChartEndpoint ? config.helmChartEndpoint : "/uai-harbor/api/chartrepo";
   }
 
 
@@ -223,7 +223,7 @@ export class LabelDefaultService extends LabelService {
     chartName: string,
     version: string
   ): Observable<Label[]> {
-    return this.http.get(`${this.chartUrl}/${projectName}/charts/${chartName}/${version}/labels`)
+    return this.http.get(`${this.chartUrl}/${projectName}/charts/${chartName}/${version}/labels`, HTTP_JSON_OPTIONS)
     .pipe(map(res => extractJson(res)));
   }
 

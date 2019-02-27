@@ -38,7 +38,7 @@ describe('RegistryConfigComponent (inline template)', () => {
     }
   };
   let config: IServiceConfig = {
-    configurationEndpoint: '/api/configurations/testing'
+    configurationEndpoint: '/uai-harbor/api/configurations/testing'
   };
   let mockSystemInfo: SystemInfo = {
     "with_notary": true,

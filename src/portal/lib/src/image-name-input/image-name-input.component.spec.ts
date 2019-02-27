@@ -28,7 +28,7 @@ describe("ImageNameInputComponent (inline template)", () => {
     ];
 
     let config: IServiceConfig = {
-        projectBaseEndpoint: "/api/projects/testing"
+        projectBaseEndpoint: "/uai-harbor/api/projects/testing"
     };
 
     beforeEach(async(() => {

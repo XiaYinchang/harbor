@@ -80,16 +80,16 @@ import { OperationService } from './operation/operation.service';
  * this default configuration.
  */
 export const DefaultServiceConfig: IServiceConfig = {
-  systemInfoEndpoint: "/api/systeminfo",
-  repositoryBaseEndpoint: "/api/repositories",
-  logBaseEndpoint: "/api/logs",
-  targetBaseEndpoint: "/api/targets",
-  replicationBaseEndpoint: "/api/replications",
-  replicationRuleEndpoint: "/api/policies/replication",
-  replicationJobEndpoint: "/api/jobs/replication",
-  vulnerabilityScanningBaseEndpoint: "/api/repositories",
-  projectPolicyEndpoint: "/api/projects/configs",
-  projectBaseEndpoint: "/api/projects",
+  systemInfoEndpoint: "/uai-harbor/api/systeminfo",
+  repositoryBaseEndpoint: "/uai-harbor/api/repositories",
+  logBaseEndpoint: "/uai-harbor/api/logs",
+  targetBaseEndpoint: "/uai-harbor/api/targets",
+  replicationBaseEndpoint: "/uai-harbor/api/replications",
+  replicationRuleEndpoint: "/uai-harbor/api/policies/replication",
+  replicationJobEndpoint: "/uai-harbor/api/jobs/replication",
+  vulnerabilityScanningBaseEndpoint: "/uai-harbor/api/repositories",
+  projectPolicyEndpoint: "/uai-harbor/api/projects/configs",
+  projectBaseEndpoint: "/uai-harbor/api/projects",
   enablei18Support: false,
   langCookieKey: DEFAULT_LANG_COOKIE_KEY,
   supportedLangs: DEFAULT_SUPPORTING_LANGS,
@@ -98,12 +98,12 @@ export const DefaultServiceConfig: IServiceConfig = {
   langMessagePathForHttpLoader: "i18n/langs/",
   langMessageFileSuffixForHttpLoader: "-lang.json",
   localI18nMessageVariableMap: {},
-  configurationEndpoint: "/api/configurations",
-  scanJobEndpoint: "/api/jobs/scan",
-  labelEndpoint: "/api/labels",
-  helmChartEndpoint: "/api/chartrepo",
+  configurationEndpoint: "/uai-harbor/api/configurations",
+  scanJobEndpoint: "/uai-harbor/api/jobs/scan",
+  labelEndpoint: "/uai-harbor/api/labels",
+  helmChartEndpoint: "/uai-harbor/api/chartrepo",
   downloadChartEndpoint: "/chartrepo",
-  gcEndpoint: "/api/system/gc"
+  gcEndpoint: "/uai-harbor/api/system/gc"
 };
 
 /**
