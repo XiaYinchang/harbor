@@ -17,6 +17,7 @@ package auth
 import (
 	"errors"
 	"fmt"
+	"os"
 	"time"
 
 	"github.com/XiaYinchang/harbor/src/common"
@@ -131,7 +132,8 @@ func Login(m models.AuthModel) (*models.User, error) {
 	if err != nil {
 		return nil, err
 	}
-	if authMode == "" {
+	robotUserName := os.Getenv("ROBOT_USER_NAME")
+	if authMode == "" || m.Principal == robotUserName{
 		authMode = common.DBAuth
 	}
 	log.Debug("Current AUTH_MODE is ", authMode)

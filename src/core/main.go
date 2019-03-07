@@ -30,9 +30,9 @@ import (
 	"github.com/XiaYinchang/harbor/src/core/api"
 	_ "github.com/XiaYinchang/harbor/src/core/auth/authproxy"
 	_ "github.com/XiaYinchang/harbor/src/core/auth/db"
+	_ "github.com/XiaYinchang/harbor/src/core/auth/keystone"
 	_ "github.com/XiaYinchang/harbor/src/core/auth/ldap"
 	_ "github.com/XiaYinchang/harbor/src/core/auth/uaa"
-	_ "github.com/XiaYinchang/harbor/src/core/auth/keystone"
 	"github.com/XiaYinchang/harbor/src/core/config"
 	"github.com/XiaYinchang/harbor/src/core/filter"
 	"github.com/XiaYinchang/harbor/src/core/notifier"
@@ -72,6 +72,19 @@ func updateInitPassword(userID int, password string) error {
 	return nil
 }
 
+func createRobotUser(userName, password string) error {
+	robotUser := models.User{
+		Username:     userName,
+		Password:     password,
+		HasAdminRole: true,
+	}
+	_, err := dao.Register(robotUser)
+	if err != nil {
+		return fmt.Errorf("Failed to create user: %v", err)
+	}
+	return nil
+}
+
 func main() {
 	beego.BConfig.WebConfig.Session.SessionOn = true
 	beego.BConfig.WebConfig.Session.SessionName = "sid"
@@ -107,6 +120,13 @@ func main() {
 	}
 	if err := updateInitPassword(adminUserID, password); err != nil {
 		log.Error(err)
+	}
+	robotUserName := os.Getenv("ROBOT_USER_NAME")
+	robotUserPassword := os.Getenv("ROBOT_USER_PASSWORD")
+	if robotUserName != "" && robotUserPassword!="" {
+		if err := createRobotUser(robotUserName, robotUserPassword); err != nil {
+			log.Error(err)
+		}
 	}
 
 	// Init API handler
