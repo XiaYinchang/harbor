@@ -189,19 +189,21 @@ func UpdateUserResetUUID(u models.User) error {
 func DeleteUser(userID int) error {
 	o := GetOrmer()
 
-	user, err := GetUser(models.User{
-		UserID: userID,
-	})
-	if err != nil {
-		return err
-	}
+	//user, err := GetUser(models.User{
+	//	UserID: userID,
+	//})
+	//if err != nil {
+	//	return err
+	//}
 
-	name := fmt.Sprintf("%s#%d", user.Username, user.UserID)
-	email := fmt.Sprintf("%s#%d", user.Email, user.UserID)
+	//name := fmt.Sprintf("%s#%d", user.Username, user.UserID)
+	//email := fmt.Sprintf("%s#%d", user.Email, user.UserID)
 
-	_, err = o.Raw(`update harbor_user 
-		set deleted = true, username = ?, email = ?
-		where user_id = ?`, name, email, userID).Exec()
+	//_, err = o.Raw(`update harbor_user
+	//	set deleted = true, username = ?, email = ?
+	//	where user_id = ?`, name, email, userID).Exec()
+	_, err := o.Raw(`delete from harbor_user
+		where user_id = ?`, userID).Exec()
 	return err
 }
 

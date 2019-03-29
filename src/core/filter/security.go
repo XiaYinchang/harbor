@@ -345,7 +345,9 @@ func (t *keystoneReqCtxModifier) Modify(ctx *beegoctx.Context) bool {
 	client, err := keystone.NewClientWithToken(keystone.KeystoneAuth{
 		Token: token,
 		AuthURL:os.Getenv("OS_AUTH_URL"),
+		DomainName: os.Getenv("OS_DOMAIN_NAME"),
 	})
+
 	if err != nil {
 		log.Errorf("validate keystone token err : %v", err)
 		return false
@@ -354,6 +356,10 @@ func (t *keystoneReqCtxModifier) Modify(ctx *beegoctx.Context) bool {
 	log.Debug("creating PMS project manager...")
 	user := &models.User{
 		Username: client.AuthInfo.UserName,
+	}
+	user, err =  dao.GetUser(*user)
+	if err != nil {
+		log.Errorf("get user detailed info: %v", err)
 	}
 
 	pm := config.GlobalProjectMgr

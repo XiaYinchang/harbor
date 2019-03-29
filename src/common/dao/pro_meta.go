@@ -38,8 +38,7 @@ func AddProjectMetadata(meta *models.ProjectMetadata) error {
 // by name will be deleted
 func DeleteProjectMetadata(projectID int64, name ...string) error {
 	params := make([]interface{}, 1)
-	sql := `update project_metadata 
-			set deleted = true 
+	sql := `delete from project_metadata
 			where project_id = ?`
 	params = append(params, projectID)
 

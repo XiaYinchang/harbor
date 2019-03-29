@@ -238,18 +238,19 @@ func (ua *UserAPI) Post() {
 		ua.RenderError(http.StatusConflict, "username has already been used!")
 		return
 	}
-	emailExist, err := dao.UserExists(user, "email")
-	if err != nil {
-		log.Errorf("Error occurred in change user profile: %v", err)
-		ua.CustomAbort(http.StatusInternalServerError, "Internal error.")
-	}
-	if emailExist {
-		log.Warning("email has already been used!")
-		ua.RenderError(http.StatusConflict, "email has already been used!")
-		return
-	}
+	//emailExist, err := dao.UserExists(user, "email")
+	//if err != nil {
+	//	log.Errorf("Error occurred in change user profile: %v", err)
+	//	ua.CustomAbort(http.StatusInternalServerError, "Internal error.")
+	//}
+	//if emailExist {
+	//	log.Warning("email has already been used!")
+	//	ua.RenderError(http.StatusConflict, "email has already been used!")
+	//	return
+	//}
 	userID, err := dao.Register(user)
 	if err != nil {
+		fmt.Println(err)
 		log.Errorf("Error occurred in Register: %v", err)
 		ua.CustomAbort(http.StatusInternalServerError, "Internal error.")
 	}
@@ -259,12 +260,13 @@ func (ua *UserAPI) Post() {
 
 // Delete ...
 func (ua *UserAPI) Delete() {
-	if !ua.IsAdmin || ua.AuthMode != common.DBAuth || ua.userID == 1 || ua.currentUserID == ua.userID {
-		ua.RenderError(http.StatusForbidden, fmt.Sprintf("User with ID: %d cannot be removed, auth mode: %s, current user ID: %d", ua.userID, ua.AuthMode, ua.currentUserID))
-		return
-	}
+	//if !ua.IsAdmin || ua.AuthMode != common.DBAuth || ua.userID == 1 || ua.currentUserID == ua.userID {
+	//	ua.RenderError(http.StatusForbidden, fmt.Sprintf("User with ID: %d cannot be removed, auth mode: %s, current user ID: %d", ua.userID, ua.AuthMode, ua.currentUserID))
+	//	return
+	//}
 
 	var err error
+	fmt.Println(ua.userID)
 	err = dao.DeleteUser(ua.userID)
 	if err != nil {
 		log.Errorf("Failed to delete data from database, error: %v", err)

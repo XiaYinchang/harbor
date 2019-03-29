@@ -279,15 +279,14 @@ func CreatePagination(query *models.ProjectQueryParam, sql string, params []inte
 
 // DeleteProject ...
 func DeleteProject(id int64) error {
-	project, err := GetProjectByID(id)
-	if err != nil {
-		return err
-	}
-	name := fmt.Sprintf("%s#%d", project.Name, project.ProjectID)
-	sql := `update project 
-		set deleted = true, name = ? 
+	//project, err := GetProjectByID(id)
+	//if err != nil {
+	//	return err
+	//}
+	//name := fmt.Sprintf("%s#%d", project.Name, project.ProjectID)
+	sql := `delete from project
 		where project_id = ?`
-	_, err = GetOrmer().Raw(sql, name, id).Exec()
+	_, err := GetOrmer().Raw(sql, id).Exec()
 	return err
 }
 

@@ -41,7 +41,7 @@ type User struct {
 	CreationTime time.Time    `orm:"column(creation_time);auto_now_add" json:"creation_time"`
 	UpdateTime   time.Time    `orm:"column(update_time);auto_now" json:"update_time"`
 	GroupList    []*UserGroup `orm:"-" json:"-"`
-	Token        string
+	Token        string       `orm:"-" json:"token"`
 }
 
 // UserQuery ...
