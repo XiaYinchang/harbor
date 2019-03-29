@@ -211,9 +211,9 @@ func (ua *UserAPI) Put() {
 // Post ...
 func (ua *UserAPI) Post() {
 
-	if !(ua.AuthMode == common.DBAuth) {
-		ua.CustomAbort(http.StatusForbidden, "")
-	}
+	//if !(ua.AuthMode == common.DBAuth) {
+	//	ua.CustomAbort(http.StatusForbidden, "")
+	//}
 
 	if !(ua.SelfRegistration || ua.IsAdmin) {
 		log.Warning("Registration can only be used by admin role user when self-registration is off.")
@@ -222,12 +222,12 @@ func (ua *UserAPI) Post() {
 
 	user := models.User{}
 	ua.DecodeJSONReq(&user)
-	err := validate(user)
-	if err != nil {
-		log.Warningf("Bad request in Register: %v", err)
-		ua.RenderError(http.StatusBadRequest, "register error:"+err.Error())
-		return
-	}
+	//err := validate(user)
+	//if err != nil {
+	//	log.Warningf("Bad request in Register: %v", err)
+	//	ua.RenderError(http.StatusBadRequest, "register error:"+err.Error())
+	//	return
+	//}
 	userExist, err := dao.UserExists(user, "username")
 	if err != nil {
 		log.Errorf("Error occurred in Register: %v", err)
