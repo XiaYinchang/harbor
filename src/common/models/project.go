@@ -154,9 +154,10 @@ type BaseProjectCollection struct {
 
 // ProjectRequest holds informations that need for creating project API
 type ProjectRequest struct {
-	Name     string            `json:"project_name"`
-	Public   *int              `json:"public"` // deprecated, reserved for project creation in replication
-	Metadata map[string]string `json:"metadata"`
+	Name      string            `json:"project_name"`
+	OwnerName string            `json:"owner_name"`
+	Public    *int              `json:"public"` // deprecated, reserved for project creation in replication
+	Metadata  map[string]string `json:"metadata"`
 }
 
 // ProjectQueryResult ...

@@ -6,7 +6,6 @@ require (
 	github.com/Microsoft/go-winio v0.4.12 // indirect
 	github.com/Shopify/logrus-bugsnag v0.0.0-20171204204709-577dee27f20d // indirect
 	github.com/XiaYinchang/harbor/src/core v0.0.0-20190223151843-5a89c0815e3e
-	github.com/XiaYinchang/keystone-go-sdk v0.0.0-20190225053546-63bdfa86437d // indirect
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412 // indirect
 	github.com/astaxie/beego v1.11.1
 	github.com/bitly/go-hostpool v0.0.0-20171023180738-a3a6125de932 // indirect

@@ -153,9 +153,14 @@ func (p *ProjectAPI) Post() {
 		pro.Metadata[models.ProMetaPublic] = strconv.FormatBool(false)
 	}
 
+	owner_name := pro.OwnerName
+	if owner_name == "" {
+		owner_name = p.SecurityCtx.GetUsername()
+	}
+
 	projectID, err := p.ProjectMgr.Create(&models.Project{
 		Name:      pro.Name,
-		OwnerName: p.SecurityCtx.GetUsername(),
+		OwnerName: owner_name,
 		Metadata:  pro.Metadata,
 	})
 	if err != nil {
